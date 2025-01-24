@@ -1,0 +1,585 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0273)https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&id_documento=60571318&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=16747f8d918aa47cdb32af69af524441f824937d29eba4c95811548012260fad -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="apple-touch-icon" sizes="180x180" href="https://sei.go.gov.br/sei/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sei.go.gov.br/sei/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sei.go.gov.br/sei/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://sei.go.gov.br/sei/favicon/sei.webmanifest">
+<link rel="mask-icon" href="https://sei.go.gov.br/sei/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://sei.go.gov.br/sei/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#0994dc">
+<meta name="msapplication-config" content="favicon/browserconfig.xml">
+<meta name="theme-color" content="#0994dc">
+
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<title>SEI - Visualizar Árvore</title>
+<link href="./infra-tooltip.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-barra-progresso.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-impressao-global.css" rel="stylesheet" type="text/css" media="print">
+<link href="./infra-ajax.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-calendario.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-arvore.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-mapa.css" rel="stylesheet" type="text/css" media="all">
+<link href="./jquery-ui.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./jquery-ui.structure.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./jquery-ui.theme.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./multiple-select.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./jquery.modalLink-1.0.0.css" rel="stylesheet" type="text/css" media="all">
+<link href="./bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./menu-bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-global-esquema-3.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-esquema-3.css" rel="stylesheet" type="text/css" media="all">      
+<link href="./infra-local-esquema-3.css" rel="stylesheet" type="text/css" media="all">
+<style></style><style type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+
+html, body {
+overflow:visible;
+}
+
+body{
+text-align:left;
+margin:0;
+}
+
+#divInfraBarraLocalizacao {display:none;}
+
+#ifrArvoreHtml {
+  background-color:white;
+}
+
+#divArvoreAguarde {margin:0;display:block;text-align:center;display:none;}
+#imgArvoreAguarde {position:relative;top:50%;}
+
+#divArvoreConteudo {
+  display:none;
+  overflow:hidden;
+  background-color:white;
+  margin-top:10px;
+  padding:10px;
+  border-radius: 5px;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+#divArvoreHtml{
+  display:contents;
+}
+
+#frmVisualizar {display:none;}
+
+#ifrEditor {display:none;width:100%;}
+
+#divInfraAreaGlobal {width:100% !important;}
+
+#divInfraAreaTelaD{background-color:#e0e0e0;}
+
+#divArvoreInformacao {
+  overflow-y:auto;
+}
+
+#divArvoreInformacao, #divArvoreInformacao a {
+  font-size:.875rem;
+}
+
+/*]]>*/-->
+</style>
+<script type="text/javascript" charset="iso-8859-1">
+var INFRA_PATH_CSS = "/infra_css",
+    INFRA_PATH_IMAGENS = "/infra_css/imagens",
+    INFRA_PATH_JS = "/infra_js",
+    INFRA_PATH_SVG = "/infra_css/svg",
+    INFRA_LUPA_TIPO_JANELA = 2,
+    INFRA_BARRA_TIPO_JANELA = 1;
+</script>
+<script type="text/javascript" charset="utf-8" src="./jquery-3.7.0.min.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./jquery-ui.min.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./multiple-select.min.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./jquery.ddslick.min.js.baixados"></script><style id="css-ddslick" type="text/css">.dd-select{ border-radius:2px; border:solid 1px #ccc; position:relative; cursor:pointer;}.dd-desc { color:#aaa; display:block; overflow: hidden; font-weight:normal; line-height: 1.4em; }.dd-selected{ overflow:hidden; display:block; padding:10px; font-weight:bold;}.dd-pointer{ width:0; height:0; position:absolute; right:10px; top:50%; margin-top:-3px;}.dd-pointer-down{ border:solid 5px transparent; border-top:solid 5px #000; }.dd-pointer-up{border:solid 5px transparent !important; border-bottom:solid 5px #000 !important; margin-top:-8px;}.dd-options{ border:solid 1px #ccc; border-top:none; list-style:none; box-shadow:0px 1px 5px #ddd; display:none; position:absolute; z-index:2000; margin:0; padding:0;background:#fff; overflow:auto;}.dd-option{ padding:10px; display:block; border-bottom:solid 1px #ddd; overflow:hidden; text-decoration:none; color:#333; cursor:pointer;-webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out;-o-transition: all 0.25s ease-in-out;-ms-transition: all 0.25s ease-in-out; }.dd-options > li:last-child > .dd-option{ border-bottom:none;}.dd-option:hover{ background:#f3f3f3; color:#000;}.dd-selected-description-truncated { text-overflow: ellipsis; white-space:nowrap; }.dd-option-selected { background:#f6f6f6; }.dd-option-image, .dd-selected-image { vertical-align:middle; float:left; margin-right:5px; max-width:64px;}.dd-image-right { float:right; margin-right:15px; margin-left:5px;}.dd-container{ position:relative;}&#8203; .dd-selected-text { font-weight:bold}&#8203;</style>
+<script type="text/javascript" charset="utf-8" src="./jquery.modalLink-1.0.0.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraPaginaEsquema3.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraBotaoMenu.js.baixados"></script>    
+<script type="text/javascript" charset="iso-8859-1" src="./InfraUtil.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraCookie.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraUpload.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraTabelaDinamica.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraLupas.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraSelectEditavel.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraAjax.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraTooltip.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraCalendario.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraArvore.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./MaskedPassword.min.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./bootstrap.min.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./infra-menu-bootstrap.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./jquery.ui.touch-punch.min.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./jquery.hotkeys.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./sei.js.baixados"></script>
+
+<script type="text/javascript" charset="iso-8859-1">
+<!--//--><![CDATA[//><!--
+
+
+var bolRedimensionando = false;
+var objLupaBloco = null;
+var objAjaxVerificacaoAssinatura = null;
+
+
+function redimensionar(){
+
+  if (!bolRedimensionando && parent.document.getElementById('ifrVisualizacao')!=null){
+
+    bolRedimensionando = true;
+
+    exibirLinkVoltarArvoreVisualizar();
+
+    var hVisualizacao = parent.document.getElementById('ifrVisualizacao').offsetHeight;
+    var hAcoesMovel = document.getElementById('divArvoreAcoesMovel').offsetHeight;
+    var hAcoes = $("#collapseControle").hasClass('show') ? document.getElementById('divArvoreAcoes').offsetHeight : 0;
+
+  	var hRedimensionamento = hVisualizacao - hAcoesMovel - hAcoes - 30;
+
+  	if (hRedimensionamento > 0 && hRedimensionamento < 1920){ //FullHD
+    	document.getElementById('divArvoreAguarde').style.height = hRedimensionamento + 'px';
+      document.getElementById('divArvoreConteudo').style.height = hRedimensionamento + 'px';
+      document.getElementById('ifrEditor').style.height = hRedimensionamento + 'px';
+    }
+
+    if (document.getElementById('ifrArvoreHtml')==null && document.getElementById('ifrTarjasAssinatura')==null){
+
+      document.getElementById('divArvoreInformacao').style.height = (hRedimensionamento - 10) + 'px';
+
+    }else {
+
+      var hInformacao = 0;
+      if (document.getElementById('divArvoreInformacao')!=null){
+        hInformacao = document.getElementById('divArvoreInformacao').offsetHeight;
+      }
+
+      if (document.getElementById('ifrArvoreHtml')!=null) {
+        document.getElementById('ifrArvoreHtml').style.height = (hRedimensionamento - hInformacao - 10) + 'px';
+      }
+
+      if (document.getElementById('ifrTarjasAssinatura')!=null) {
+        document.getElementById('ifrTarjasAssinatura').style.height = (hRedimensionamento - hInformacao - 10) + 'px';
+      }
+    }
+
+    bolRedimensionando = false;
+  }
+}
+
+function exibirLinkVoltarArvoreVisualizar(){
+  if(parent.infraIsBreakpointBootstrap("lg")){
+    $("#ancVoltarArvore").css("display","none");
+    $("#ancIcones").css("display","none");
+    $("#ancAnteriorArvore").css("display","none");
+    $("#ancProximoArvore").css("display","none");
+    $("#collapseControle").collapse("show");
+  }else {
+    $("#ancVoltarArvore").css("display", "inline");
+    $("#ancIcones").css("display", "inline");
+    $("#ancAnteriorArvore").css("display","inline");
+    $("#ancProximoArvore").css("display","inline");
+    $("#collapseControle").collapse("hide");
+  }
+}
+
+function inicializar(){
+
+  exibirLinkVoltarArvoreVisualizar();
+
+  
+  //exclusão/renúncia volta para o controle de processos
+  
+
+  objAjaxVerificacaoAssinatura = new infraAjaxComplementar(null,'controlador_ajax.php?acao_ajax=documento_verificar_assinatura&id_documento=60571318&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=c4b6507356ad800b1b5279b926872e9b6cfb87b583ae7dac27356ea52e4013de');
+  objAjaxVerificacaoAssinatura.async = false;
+  objAjaxVerificacaoAssinatura.bolAssinado = false;
+  objAjaxVerificacaoAssinatura.processarResultado = function(arr){
+   if (arr!=null) {
+     this.bolAssinado = false;
+     if (arr['SinAssinado']!=undefined && arr['SinAssinado']=='S') {
+       this.bolAssinado = true;
+     }
+   }
+  };
+
+  //monta visualização de acordo com o nó selecionado na árvore
+  var objArvore = parent.document.getElementById('ifrArvore').contentWindow['objArvore'];
+
+  if (objArvore != null){
+
+    var noSelecionado = objArvore.getNoSelecionado();
+
+    if (noSelecionado != null){
+
+      if (noSelecionado.acoes != undefined){
+        document.getElementById('divArvoreAcoes').innerHTML = noSelecionado.acoes;
+      }
+
+      if(noSelecionado.acoes == undefined ||  noSelecionado.acoes.trim() == ""){
+        $("#divArvoreAcoesMovel").hide();
+      }
+
+      document.getElementById('divArvoreAguarde').style.display = 'block';
+
+      if (noSelecionado.src!=undefined && noSelecionado.src!=''){
+
+        //se for um link carrega no iframe
+        if (noSelecionado.html != undefined && noSelecionado.html != ''){
+
+           var innerHtml = '';
+
+           if (noSelecionado.assinatura == undefined || noSelecionado.assinatura == ''){
+             innerHtml += '<div id="divArvoreInformacao">' + noSelecionado.html + '</div>';
+           }else{
+             innerHtml += '<div id="divArvoreInformacao">' + noSelecionado.html + '<div id="divAssinaturas" style="float:right">' + noSelecionado.assinatura + '</div></div>';
+           }
+
+           innerHtml += '<iframe onload="ocultarAguarde();" id="ifrArvoreHtml" src="' + noSelecionado.src + '" frameborder="0" height="100%" width="100%"></iframe>';
+
+          
+          document.getElementById('divArvoreHtml').innerHTML = innerHtml;
+        }else{
+          document.getElementById('divArvoreHtml').innerHTML = '<iframe id="ifrArvoreHtml" onload="ocultarAguarde();" src="' + noSelecionado.src + '" frameborder="0" height="100%" width="100%"></iframe>';
+        }
+
+        if (noSelecionado.src.indexOf('documento_download_anexo')!=-1){
+          ocultarAguarde();
+        }
+
+      }else if (noSelecionado.html != undefined &&  noSelecionado.html != ''){
+
+         var innerHtml = '';
+
+         if (noSelecionado.assinatura == undefined || noSelecionado.assinatura == ''){
+           innerHtml += '<div id="divArvoreInformacao">' + noSelecionado.html + '</div>';
+         }else{
+           innerHtml += '<div id="divArvoreInformacao">' + noSelecionado.html + '<div id="divAssinaturas" style="float:right">' + noSelecionado.assinatura + '</div></div>';
+         }
+
+        
+        //se for um conteudo HTML copia para a div
+        document.getElementById('divArvoreHtml').innerHTML = innerHtml;
+
+        ocultarAguarde();
+      }
+
+
+    }else{
+      atualizarArvore('controlador.php?acao=procedimento_visualizar&acao_origem=arvore_visualizar&id_procedimento=55596367&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=1ee8541a71dd9a4f1c1ced68792ee0bebf09b9b798a0c0e3362fd7f6d259bb44');
+      return;
+    }
+
+    redimensionar();
+    infraAdicionarEvento(window,'resize',redimensionar);
+  }
+
+	objLupaBloco = new infraLupaText('txtBloco','hdnIdBloco','controlador.php?acao=bloco_selecionar_processo&tipo_selecao=1&id_object=objLupaBloco&id_procedimento=55596367&id_documento=60571318&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=bd27d23cd3e988062d625360ba002a4739e634555a1b227855ab5e38891416da');
+	objLupaBloco.finalizarSelecao = function(){
+    document.getElementById('frmVisualizar').action = 'controlador.php?acao=rel_bloco_protocolo_cadastrar&acao_origem=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=fc21836d7273311c950f76781c1773a5a403eb4ca46f156565694fa8d35344ae';
+    document.getElementById('frmVisualizar').submit();
+	}
+}
+
+
+function excluirProcesso(){
+  if (confirm('Confirma exclusão do processo?')){
+   location.href = 'controlador.php?acao=procedimento_excluir&acao_origem=arvore_visualizar&id_procedimento=55596367&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=d6deff723f658873b4d0c436d957f369ddae354a622fcd3829f4aeb06bb50329';
+  }
+}
+
+function removerSobrestamentoProcesso(){
+  if (confirm('Confirma remoção de sobrestamento do processo?')){
+   location.href = 'controlador.php?acao=procedimento_remover_sobrestamento&acao_origem=arvore_visualizar&id_procedimento=55596367&atualizar_arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=076bcab0e541433e64966a74753fbc326bd8e9e221baeddddcea996bf9d9b965';
+  }
+}
+
+function concluirProcesso(){
+  //if (confirm('Confirma conclusão do processo?')){
+   location.href = 'controlador.php?acao=procedimento_concluir&acao_origem=arvore_visualizar&id_procedimento=55596367&atualizar_arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=ef7e959645a3d49b122579c765ae8c2849e634116e1d66b8fd11a712af115d2d';
+  //}
+}
+
+function reabrirProcesso(){
+  //if (confirm('Confirma reabetura do processo?')){
+   location.href = 'controlador.php?acao=procedimento_reabrir&acao_origem=arvore_visualizar&id_procedimento=55596367&atualizar_arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=b01e92f5dc1dd78018780c71b90eda225051003d1ee52387f839c36185cf94a5';
+  //}
+}
+
+function excluirDocumento(){
+  if (confirm('Confirma exclusão do documento?')){
+   location.href = 'controlador.php?acao=documento_excluir&acao_origem=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&atualizar_arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=093f355db06373b948d44c0316f4daef0a8ee7468aa436ce61148eeb5d4212af';
+  }
+}
+
+function cienciaProcesso(){
+  //if (confirm('Confirma ciência no processo?')){
+   location.href = 'controlador.php?acao=procedimento_ciencia&acao_origem=arvore_visualizar&id_procedimento=55596367&atualizar_arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=57ce8e97e8bf99d0b053a05f5949d4d8310b3acffa0087f11573f8ca1be61267';
+  //}
+}
+
+function cienciaDocumento(){
+  //if (confirm('Confirma ciência no documento?')){
+   location.href = 'controlador.php?acao=documento_ciencia&acao_origem=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&atualizar_arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=48582e6c689f476eb4f97d5b71c13b902787bdf9072ea5bb644fa79fd3ee8264';
+  //}
+}
+
+function cienciaProcessoAnexado(){
+  //if (confirm('Confirma ciência no processo anexado?')){
+  location.href = 'controlador.php?acao=procedimento_anexado_ciencia&acao_origem=arvore_visualizar&id_procedimento=55596367&id_procedimento_anexado=&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=d43c80eea9ffffed64fffa249a966b6afd085e33c50a3bbd1dbe1fac8baa0cab';
+  //}
+}
+
+  function assinarDocumento(){
+    parent.infraAbrirJanelaModal('controlador.php?acao=documento_assinar&acao_origem=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=329c0255b1d2965edfe2be334a6aefd7d5ba7e3fd01ebab383743371e837f3b9',600,450);
+  }
+
+function enviarEmailProcedimento(){
+  abrirJanela('janelaEmail_100008067_55596367','controlador.php?acao=procedimento_enviar_email&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=9017eaadf89c5fc1271ca8f6e70cc6201e0272b7efd36bb3aed61c5408794884');
+}
+
+function enviarEmailDocumento(){
+  abrirJanela('janelaEmailDocumento_100008067_60571318','controlador.php?acao=documento_enviar_email&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=cb49a15a53100293d053c3c7bd0d54c075850e9ffd4526d8c43e34bff37d6154');
+}
+
+function encaminharEmail(){
+  abrirJanela('janelaEncaminharEmail_100008067_60571318','controlador.php?acao=email_encaminhar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=64ae7a1e43089b2648047302e6d5ce044d6ce18bf8764c3f28ae817ba34c4735');
+}
+
+function responderFormulario(){
+  abrirJanela('janelaResponderFormulario_100008067_60571318','controlador.php?acao=responder_formulario&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=d901db5841d973beb423ca4aeaff2897faa4fd84f1eaf173550dd6b3f4673c2e');
+}
+
+function renunciarCredencial(){
+  if (confirm("ATENÇÃO: Confirma renúncia de credenciais do processo nesta unidade?")){
+    location.href = 'controlador.php?acao=procedimento_credencial_renunciar&id_procedimento=55596367&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=b829700fcbdf0760d3b0c5896079211616607b0bd13d7932c4fd554707458bed';
+  }
+}
+
+function editarConteudo(assinado){
+
+  if (INFRA_FF > 0 && INFRA_FF < 4){
+    alert('Para realizar a edição de documentos no Firefox é recomendado atualizar o navegador para a versão 4 ou posterior.\n\nPara iniciar a atualização automática acesse o menu "Ajuda / Verificar atualizações..." ou "Ajuda / Sobre o Firefox" do navegador.');
+    //return;
+  }
+
+  if (assinado == 'S') {
+    objAjaxVerificacaoAssinatura.bolAssinado = true;
+  }else{
+    objAjaxVerificacaoAssinatura.executar();
+  }
+
+  if (objAjaxVerificacaoAssinatura.bolAssinado){
+
+    if (!confirm('Este documento já foi assinado. Se for editado perderá a assinatura e deverá ser assinado novamente.\n\n Deseja editar o documento?')){
+
+      if (assinado == 'N') {
+        atualizarArvore('controlador.php?acao=procedimento_visualizar&acao_origem=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&id_procedimento_anexado=&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=6905b5861ac4b17903d46f494e9114176d0d41eb4a4100d4673a73ecb250b875');
+      }
+
+      return;
+    }
+  }
+
+
+
+  infraAdicionarEvento(document.getElementById('ifrEditor'), 'load', loadEditarConteudo);
+
+  var janelaEditor = infraAbrirJanela('', 'janelaEditor_100008067_60571318', infraClientWidth(), infraClientHeight(), 'location=0,status=0,resizable=1,scrollbars=1', false);
+  if (janelaEditor.location=='about:blank') {
+    janelaEditor.location.href = 'controlador.php?acao=editor_montar&acao_origem=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=9f3cefcd5c346fb22a3fea98ce83860ced9c434ab82a8f7fef4721590d69b2f0';
+  }
+  janelaEditor.focus();
+}
+
+function alterarFormulario(assinado){
+
+    if (assinado == 'S') {
+      objAjaxVerificacaoAssinatura.bolAssinado = true;
+    }else{
+      objAjaxVerificacaoAssinatura.executar();
+    }
+
+    if (objAjaxVerificacaoAssinatura.bolAssinado){
+
+      if (!confirm('Este formulário já foi assinado. Se for editado perderá a assinatura e deverá ser assinado novamente.\n\n Deseja editar o formulário?')){
+
+        if (assinado == 'N') {
+          atualizarArvore('controlador.php?acao=procedimento_visualizar&acao_origem=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&id_procedimento_anexado=&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=6905b5861ac4b17903d46f494e9114176d0d41eb4a4100d4673a73ecb250b875');
+        }
+
+        return;
+      }
+    }
+
+    location.href = 'controlador.php?acao=formulario_alterar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=363fccb74e4aed9892b25ec01d35bce59958193d38d0e3f1a570d80940613549';
+}
+
+function abrirJanela(nome, link){
+    var janela = infraAbrirJanela('',nome,800,500,'location=0,status=1,resizable=1,scrollbars=1',false);
+    if (janela.location == 'about:blank'){
+      janela.location.href = link;
+    }
+    janela.focus();
+}
+
+function ocultarAguarde(){
+
+  if (detectarExcecao('ifrArvoreHtml')){
+    if (document.getElementById('divArvoreInformacao')!=null) {
+      document.getElementById('divArvoreInformacao').style.display = 'none';
+    }
+  }
+
+  if (document.getElementById('divArvoreAguarde')!=null) {
+    document.getElementById('divArvoreAguarde').style.display = 'none';
+  }
+
+  if (document.getElementById('divArvoreConteudo')!=null) {
+    document.getElementById('divArvoreConteudo').style.display = 'block';
+  }
+
+  //corrige problema do IE onde a barra de status de vez em quando fica como se estivesse carregando (mesmo após o término)
+  if (INFRA_IE > 0){
+    window.status='Finalizado.';
+  }
+
+  redimensionar();
+}
+
+function loadEditarConteudo(){
+
+  document.getElementById('divArvoreAcoes').style.display = 'none';
+  document.getElementById('divArvoreConteudo').style.display = 'none';
+
+  if (detectarExcecao('ifrEditor')){
+    document.getElementById('ifrEditor').style.display = 'block';
+    parent.document.getElementById('ifrArvore').src = 'controlador.php?acao=procedimento_visualizar&acao_origem=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&montar_visualizacao=0&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=d2e1ee160ec388fc324c44226a626b94d3a10a81e2070aa47d9549ce3ab9b0f7';
+  }else{
+    document.getElementById('ifrEditor').style.display = 'none';
+    //monta árvore atualizando iframe para mostrar avisos
+    parent.document.getElementById('ifrArvore').src = 'controlador.php?acao=procedimento_visualizar&acao_origem=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&id_procedimento_anexado=&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=6905b5861ac4b17903d46f494e9114176d0d41eb4a4100d4673a73ecb250b875';
+  }
+}
+
+function atualizarArvore(linkArvore){
+  parent.parent.infraOcultarAviso();
+  if (detectarExcecao('ifrEditor')){
+    document.getElementById('divArvoreAcoes').style.display = 'none';
+  }else{
+    parent.document.getElementById('ifrArvore').src = linkArvore;
+  }
+}
+
+function detectarExcecao(idIFrame){
+  ret = false;
+
+  try{
+    var doc = null;
+    if (window.frames[idIFrame]!=null){
+      if (window.frames[idIFrame].document){
+        doc = window.frames[idIFrame].document;
+      }else if (window.frames[idIFrame].contentDocument){
+        doc = window.frames[idIFrame].contentDocument;
+      }
+    }
+    ret = (doc!=null && doc.getElementById('divInfraExcecao')!=null);
+  }catch(exc){}
+
+  return ret;
+}
+
+function restaurarImpressao(){
+  	document.getElementById('divArvoreAcoes').style.display='';
+}
+
+
+function incluirEmBloco(tipo){
+  document.getElementById('txtBloco').value = '';
+  document.getElementById('hdnIdBloco').value = '';
+  objLupaBloco.selecionar(700,500,true);
+}
+
+function visualizarHtmlAssinatura(link){
+  document.getElementById('divArvoreHtml').innerHTML = '<iframe id="ifrArvoreHtml" src="' + link + '" frameborder="0" height="100%" width="100%"></iframe>';
+}
+
+function visualizarAssinaturas(){
+  if (document.getElementById('ifrTarjasAssinatura').style.display == 'none'){
+    document.getElementById('btnVisualizarAssinaturas').innerHTML = 'Ocultar Autenticações';
+    document.getElementById('btnVisualizarAssinaturas').value = 'Ocultar Autenticações';
+
+    if (document.getElementById('ifrArvoreHtml')!=null){
+      document.getElementById('ifrArvoreHtml').style.display = 'none';
+    }
+
+    document.getElementById('ifrTarjasAssinatura').style.display = 'block';
+  }else{
+    document.getElementById('btnVisualizarAssinaturas').innerHTML = 'Visualizar Autenticações';
+    document.getElementById('btnVisualizarAssinaturas').value = 'Visualizar Autenticações';
+    document.getElementById('ifrTarjasAssinatura').style.display = 'none';
+
+    if (document.getElementById('ifrArvoreHtml')!=null){
+      document.getElementById('ifrArvoreHtml').style.display = 'block';
+    }
+  }
+}
+
+
+//--><!]]>
+</script>
+</head>
+<body onload="inicializar();">
+<button onclick="infraMoverParaTopo()" id="btnInfraTopo" class="infraButton infraCorBarraSistema"><img src="./topo.svg" title="Voltar ao Topo" alt="Voltar ao Topo" tabindex="32767"></button>
+<div id="divInfraAreaGlobal" class="vh-100 vw-100 d-flex flex-column m-0 border-0">
+<div id="divInfraAreaTela" style="min-height:0;" class="w-100  flex-grow-1 d-flex flex-row  divInfraAreaTelaSimples">
+<div id="divInfraAreaTelaD" class=" flex-grow-1 px-3">
+
+  <div id="divArvoreAcoesMovel" class="barraBotoesSEIMovel">
+    <a id="ancVoltarArvore" href="javascript:seiVoltarArvoreProcesso()" class="btn" style="display:none;" title="Voltar para a Árvore do Processo">
+      <img src="./voltar.svg" width="32" height="32">
+    </a>
+
+    <a id="ancIcones" class="btn" data-toggle="collapse" style="display: none;" href="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=60571318&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=16747f8d918aa47cdb32af69af524441f824937d29eba4c95811548012260fad#collapseControle" role="button" aria-expanded="true" aria-controls="collapseControle" title="Exibir/Ocultar Ícones">
+      <img src="./menu_pontos.svg" width="32" height="32">
+    </a>
+
+    <a id="ancAnteriorArvore" href="javascript:parent.document.getElementById(&#39;ifrArvore&#39;).contentWindow.navegarArvore(&#39;A&#39;)" class="btn" style="display:none;" title="Visualizar Anterior">
+      <img src="./anterior.svg" width="32" height="32">
+    </a>
+
+    <a id="ancProximoArvore" href="javascript:parent.document.getElementById(&#39;ifrArvore&#39;).contentWindow.navegarArvore(&#39;P&#39;)" class="btn" style="display:none;" title="Visualizar Próximo">
+      <img src="./proximo.svg" width="32" height="32">
+    </a>
+
+  </div>
+
+  <div class="collapse show" id="collapseControle">
+    <div id="divArvoreAcoes" class="barraBotoesSEI"><a href="https://sei.go.gov.br/sei/controlador.php?acao=documento_consultar&amp;acao_origem=arvore_visualizar&amp;acao_retorno=arvore_visualizar&amp;id_procedimento=55596367&amp;id_documento=60571318&amp;arvore=1&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=85b4d365390d29eb7601237684131fdedeef67cf731aaab08a7f9e1cdca6ee7d" tabindex="452"><img src="./documento_alterar.svg" alt="Consultar Documento" title="Consultar Documento"></a><a href="https://sei.go.gov.br/sei/controlador.php?acao=acompanhamento_gerenciar&amp;acao_origem=arvore_visualizar&amp;acao_retorno=arvore_visualizar&amp;id_procedimento=55596367&amp;arvore=1&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=cd83a83bd79da68fb8d7eff61be0415db347e8fbcf53f8346d33d52122301861" tabindex="452"><img src="./acompanhamento_especial_cadastro.svg" alt="Acompanhamento Especial" title="Acompanhamento Especial"></a><a href="https://sei.go.gov.br/sei/controlador.php?acao=protocolo_modelo_gerenciar&amp;acao_origem=arvore_visualizar&amp;acao_retorno=arvore_visualizar&amp;id_protocolo=60571318&amp;arvore=1&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=79edfa3c882a96ce94da0b84ccb1ef0677ad47c88564acee6ded23ec6c6610d9" tabindex="452"><img src="./documento_modelo.svg" alt="Adicionar aos Favoritos" title="Adicionar aos Favoritos"></a><a target="_blank" href="https://sei.go.gov.br/sei/controlador.php?acao=documento_imprimir_web&amp;acao_origem=arvore_visualizar&amp;id_documento=60571318&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=d2f5a6776513158ba8a5c6a2fff37d24e421669e2ed43b46a8a05f9ea0205c34" tabindex="452"><img src="./documento_imprimir.svg" alt="Imprimir Web" title="Imprimir Web"></a><a href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_gerar_pdf&amp;acao_origem=arvore_visualizar&amp;acao_retorno=arvore_visualizar&amp;id_procedimento=55596367&amp;id_documento=60571318&amp;arvore=1&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=e1f88ebcaf8af935bc976d3ea8d549b79dfb4ec2df2c3a65f2715f6bb4a4e92e" tabindex="452"><img src="./documento_gerar_pdf.svg" alt="Gerar Arquivo PDF do Documento" title="Gerar Arquivo PDF do Documento"></a><a href="https://sei.go.gov.br/sei/controlador.php?acao=comentario_listar&amp;acao_origem=arvore_visualizar&amp;acao_retorno=arvore_visualizar&amp;id_procedimento=55596367&amp;id_rel_protocolo_protocolo=57996059&amp;arvore=1&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=fff12bcd02a8dc1d41a3c060a0956b46127b2457a9c42923ba6781f533cd1eb3" tabindex="452"><img src="./comentario.svg" alt="Comentários" title="Comentários"></a><a href="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=60571318&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=16747f8d918aa47cdb32af69af524441f824937d29eba4c95811548012260fad#" onclick="reabrirProcesso();" tabindex="452"><img src="./processo_reabrir.svg" alt="Reabrir Processo" title="Reabrir Processo"></a></div>
+  </div>
+
+  <div id="divArvoreAguarde" style="display: none; height: 858px;"><img id="imgArvoreAguarde" src="./aguarde.svg" width="48" height="48"></div>
+  <div id="divArvoreConteudo" style="height: 858px; display: block;"><div id="divArvoreHtml"><iframe id="ifrArvoreHtml" onload="ocultarAguarde();" src="./controlador(2).html" frameborder="0" height="100%" width="100%" style="height: 848px;"></iframe></div></div>
+
+  <!-- Edição de Conteúdo -->
+  <iframe id="ifrEditor" frameborder="0" style="height: 858px;" src="./saved_resource(1).html"> </iframe>
+
+  <!-- Inclusão em Bloco -->
+  <form id="frmVisualizar" method="post" action="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=60571318&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=16747f8d918aa47cdb32af69af524441f824937d29eba4c95811548012260fad">
+    <input type="text" id="txtBloco" name="txtBloco" value="">
+    <input type="hidden" id="hdnIdBloco" name="hdnIdBloco" value="">
+  </form>
+</div>
+</div>
+</div>
+<input type="hidden" id="hdnInfraPrefixoCookie" name="hdnInfraPrefixoCookie" value="GOVERNADORIA_SEI_dfilho">
+<div id="infraDivImpressao" class="infraImpressao"></div>
+<div id="infraDivBootstrap-xs" class="d-none d-xs-block"></div>
+<div id="infraDivBootstrap-sm" class="d-none d-sm-block"></div>
+<div id="infraDivBootstrap-md" class="d-none d-md-block"></div>
+<div id="infraDivBootstrap-lg" class="d-none d-lg-block"></div>
+
+
+</body></html>

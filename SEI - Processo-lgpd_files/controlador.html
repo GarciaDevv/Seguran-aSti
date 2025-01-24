@@ -1,0 +1,1033 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0293)https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&acao_origem=procedimento_trabalhar&acao_retorno=principal&id_procedimento=55596367&id_documento=&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9 -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="apple-touch-icon" sizes="180x180" href="https://sei.go.gov.br/sei/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sei.go.gov.br/sei/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sei.go.gov.br/sei/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://sei.go.gov.br/sei/favicon/sei.webmanifest">
+<link rel="mask-icon" href="https://sei.go.gov.br/sei/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://sei.go.gov.br/sei/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#0994dc">
+<meta name="msapplication-config" content="favicon/browserconfig.xml">
+<meta name="theme-color" content="#0994dc">
+
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<title>SEI - Árvore Montar</title>
+<link href="./infra-tooltip.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-barra-progresso.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-impressao-global.css" rel="stylesheet" type="text/css" media="print">
+<link href="./infra-ajax.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-calendario.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-arvore.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-mapa.css" rel="stylesheet" type="text/css" media="all">
+<link href="./jquery-ui.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./jquery-ui.structure.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./jquery-ui.theme.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./multiple-select.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./jquery.modalLink-1.0.0.css" rel="stylesheet" type="text/css" media="all">
+<link href="./bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./menu-bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-global-esquema-3.css" rel="stylesheet" type="text/css" media="all">
+<link href="./infra-esquema-3.css" rel="stylesheet" type="text/css" media="all">      
+<link href="./infra-local-esquema-3.css" rel="stylesheet" type="text/css" media="all">
+<style></style><style type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+
+body{
+
+overflow:visible;
+}
+
+#header {
+margin:0 auto;
+height: 30px;
+width:100%;
+}
+
+#topmenu {
+height:20px;
+padding-top:.5em;
+}
+
+#container {
+width:100%;
+}
+
+#content {
+margin: 0 auto;
+}
+
+#divArvore {
+width:99%;
+padding-top:2px;
+}
+
+#divConsultarAndamento {
+width:99%;
+padding:1em 0.2em 1em 0.2em;
+margin-top:1em;
+border-top:.1em solid #b0b0b0;
+}
+
+#divConsultarAndamento a {
+text-decoration:none;
+font-size: .9rem;
+}
+
+#divConsultarAndamento img {
+vertical-align:middle;
+}
+
+#divRelacionados {
+width:99%;
+padding-top:1em;
+border-top:.1em solid #b0b0b0;
+}
+
+#divRelacionados label,
+#divRelacionadosParciais label,
+#divRelacionados a,
+#divRelacionadosParciais a  {
+font-size: .875rem;
+}
+
+#divRelacionados label{
+width:99%;
+}
+
+.divRelacionadosParcial{
+padding-left:2em;
+display:none;
+}
+
+a.ancoraRelacionadosParcial{
+padding-left:1.2em;
+text-decoration:none;
+color: black;
+}
+
+a.ancoraRelacionadosParcial:hover{
+text-decoration:underline;
+}
+
+.noVisitado {
+background-color:white;
+color:#0000cc;
+}
+
+.cardDeckRelacionado{
+  margin:5px 0;
+}
+.cardRelacionado{
+  border-color: #b0b0b0;
+  margin: 0 5px 10px 5px !important;
+  min-width: 220px;
+  max-width: 220px;
+}
+.cardTitleRelacionado{
+  margin-bottom: 0 !important;
+}
+.cardBodyRelacionado{
+  padding: .2rem .4rem;
+}
+
+
+/*]]>*/-->
+</style>
+<script type="text/javascript" charset="iso-8859-1" src="./popper.min.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1">
+var INFRA_PATH_CSS = "/infra_css",
+    INFRA_PATH_IMAGENS = "/infra_css/imagens",
+    INFRA_PATH_JS = "/infra_js",
+    INFRA_PATH_SVG = "/infra_css/svg",
+    INFRA_LUPA_TIPO_JANELA = 2,
+    INFRA_BARRA_TIPO_JANELA = 1;
+</script>
+<script type="text/javascript" charset="utf-8" src="./jquery-3.7.0.min.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./jquery-ui.min.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./multiple-select.min.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./jquery.ddslick.min.js.baixados"></script><style id="css-ddslick" type="text/css">.dd-select{ border-radius:2px; border:solid 1px #ccc; position:relative; cursor:pointer;}.dd-desc { color:#aaa; display:block; overflow: hidden; font-weight:normal; line-height: 1.4em; }.dd-selected{ overflow:hidden; display:block; padding:10px; font-weight:bold;}.dd-pointer{ width:0; height:0; position:absolute; right:10px; top:50%; margin-top:-3px;}.dd-pointer-down{ border:solid 5px transparent; border-top:solid 5px #000; }.dd-pointer-up{border:solid 5px transparent !important; border-bottom:solid 5px #000 !important; margin-top:-8px;}.dd-options{ border:solid 1px #ccc; border-top:none; list-style:none; box-shadow:0px 1px 5px #ddd; display:none; position:absolute; z-index:2000; margin:0; padding:0;background:#fff; overflow:auto;}.dd-option{ padding:10px; display:block; border-bottom:solid 1px #ddd; overflow:hidden; text-decoration:none; color:#333; cursor:pointer;-webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out;-o-transition: all 0.25s ease-in-out;-ms-transition: all 0.25s ease-in-out; }.dd-options > li:last-child > .dd-option{ border-bottom:none;}.dd-option:hover{ background:#f3f3f3; color:#000;}.dd-selected-description-truncated { text-overflow: ellipsis; white-space:nowrap; }.dd-option-selected { background:#f6f6f6; }.dd-option-image, .dd-selected-image { vertical-align:middle; float:left; margin-right:5px; max-width:64px;}.dd-image-right { float:right; margin-right:15px; margin-left:5px;}.dd-container{ position:relative;}&#8203; .dd-selected-text { font-weight:bold}&#8203;</style>
+<script type="text/javascript" charset="utf-8" src="./jquery.modalLink-1.0.0.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraPaginaEsquema3.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraBotaoMenu.js.baixados"></script>    
+<script type="text/javascript" charset="iso-8859-1" src="./InfraUtil.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraCookie.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraUpload.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraTabelaDinamica.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraLupas.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraSelectEditavel.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraAjax.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraTooltip.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraCalendario.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./InfraArvore.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./MaskedPassword.min.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./bootstrap.min.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./infra-menu-bootstrap.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./jquery.ui.touch-punch.min.js.baixados"></script>
+<script type="text/javascript" charset="utf-8" src="./jquery.hotkeys.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./sei.js.baixados"></script>
+<script type="text/javascript" charset="iso-8859-1" src="./clipboard.min.js.baixados"></script>
+
+<script type="text/javascript" charset="iso-8859-1">
+<!--//--><![CDATA[//><!--
+
+//<script>
+  var objArvore = null;
+  var processandoPasta = false;
+  var processarIframe = false;
+
+  function inicializar(){
+
+    if (''=='1'){
+      parent.parent.document.location.href = 'controlador.php?acao=procedimento_controlar&acao_origem=procedimento_visualizar&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=18faac78a4ae594cf21a6501b5de11ee7a66b9af50a51d3a6092f8d5b25050e1';
+    }
+
+    document.onkeydown = navegarTeclado;
+
+    var Nos = Array();
+    var NosAcoes = Array();
+
+        
+
+
+//CA=300
+Nos[0] = new infraArvoreNo("PROCESSO","55596367",null,"controlador.php?acao=arvore_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=270acf99df0f7b628563661f5c48958cfc8971b217ac0136e5482281631c13fa","ifrVisualizacao","202320920001591","Minuta","svg/processo.svg?11","svg/processo.svg?11","svg/processo.svg?11",true,true,"noVisitado",null,"noVisitado","202320920001591");
+Nos[0].acoes = '<a href="controlador.php?acao=procedimento_escolher_tipo_relacionado&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento_destino=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=fa843691992f626c8c10b1affb666b49b9102dc1264f3266ead18a11cad29f00" tabindex="451" ><img  src="svg/processo_gerar_relacionado.svg?11" alt="Iniciar Processo Relacionado" title="Iniciar Processo Relacionado"/></a><a href="controlador.php?acao=procedimento_consultar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=d6081a6f285b8bd83f6c339b79819b38fbca9ea7077a6ac58fab830955d6d549" tabindex="451" ><img  src="svg/processo_alterar.svg?11" alt="Consultar Processo" title="Consultar Processo"/></a><a href="controlador.php?acao=acompanhamento_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=cd83a83bd79da68fb8d7eff61be0415db347e8fbcf53f8346d33d52122301861" tabindex="451" ><img  src="svg/acompanhamento_especial_cadastro.svg?11" alt="Acompanhamento Especial" title="Acompanhamento Especial"/></a><a href="controlador.php?acao=protocolo_modelo_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_protocolo=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=05df5ff8a27edc7b02160a9724e4031a4e0792c3a40824723d38c7f761534c21" tabindex="451" ><img  src="svg/processo_modelo.svg?11" alt="Adicionar aos Favoritos" title="Adicionar aos Favoritos"/></a><a href="controlador.php?acao=anotacao_registrar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=ee42365862b79bf510f514d4864fc982b5a1a2c1d2e8049e3a345663c43c2633" tabindex="451" ><img  src="svg/anotacao_cadastro.svg?11" alt="Anotações" title="Anotações" /></a><a href="#" onclick="reabrirProcesso();" tabindex="451" ><img src="svg/processo_reabrir.svg?11" alt="Reabrir Processo" title="Reabrir Processo" /><a href="controlador.php?acao=procedimento_gerar_pdf&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=70c26ba79c8287beacad823cf62424b1a7bf73cbe548df7a7781bc87d4c4feee" tabindex="451" ><img  src="svg/processo_gerar_pdf.svg?11" alt="Gerar Arquivo PDF do Processo" title="Gerar Arquivo PDF do Processo"/></a><a href="controlador.php?acao=procedimento_gerar_zip&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=e03f9fc7262295d6f6141b3ab20794b5feaadd76c05dfb5f59b41818420c7bdc" tabindex="451" ><img  src="svg/processo_gerar_zip.svg?11" alt="Gerar Arquivo ZIP do Processo" title="Gerar Arquivo ZIP do Processo"/></a><a href="controlador.php?acao=comentario_listar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=b873182ee981f037b2430f7db10519d7649141be951856bc622dd4f62a312595" tabindex="451" ><img  src="svg/comentario.svg?11" alt="Comentários" title="Comentários"/></a><a href="controlador.php?acao=controle_prazo_definir&acao_origem=procedimento_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=0b266dee06ed49a6fffd9338cd2bb812e371186bd39d2e1066df590eac207ed4" tabindex="451" ><img  src="svg/controle_prazo_gerenciar.svg?11" alt="Controle de Prazo" title="Controle de Prazo" /></a><a href="#" onclick="parent.parent.document.location.href=\'controlador.php?acao=procedimento_controlar&acao_origem=procedimento_visualizar&acao_retorno=principal&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=c2773a851024769eeb4e43d8d7cb280168582212bc8ab0566c76f54d0928c7fc#ID-55596367\';" tabindex="451" ><img  src="svg/controle_processos.svg?11" alt="Controle de Processos" title="Controle de Processos" /></a><a href="controlador.php?acao=procedimento_pesquisar&acao_origem=procedimento_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=994a46acdfc513c1b1e3097b63186123f47f45791f523efb648819d046966468" tabindex="451" ><img  src="svg/processo_pesquisar.svg?11" alt="Pesquisar no Processo" title="Pesquisar no Processo" /></a>';
+Nos[0].src = '';
+Nos[0].html = 'Processo não possui andamentos abertos.<br />';
+
+//CA=320
+Nos[1] = new infraArvoreNo("DOCUMENTO","55596369","55596367","controlador.php?acao=arvore_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&id_documento=55596369&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=2877d0120a01887215c19728b81ec781278f40c99311ca8b9731fe4ee9c4d426","ifrVisualizacao","Despacho 330 (54502287)","Despacho 330 (54502287)","svg/documento_interno.svg?11","svg/documento_interno.svg?11","svg/documento_interno.svg?11",true,true,null,null,"noVisitado","54502287");
+Nos[1].acoes = '<a href="controlador.php?acao=documento_consultar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=55596369&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=20ccfe23ebc75a18eb71bc22a7c21079fe0099f381cda8e1cc820205760f1b69" tabindex="452" ><img  src="svg/documento_alterar.svg?11" alt="Consultar Documento" title="Consultar Documento" /></a><a href="controlador.php?acao=acompanhamento_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=cd83a83bd79da68fb8d7eff61be0415db347e8fbcf53f8346d33d52122301861" tabindex="452" ><img  src="svg/acompanhamento_especial_cadastro.svg?11" alt="Acompanhamento Especial" title="Acompanhamento Especial"/></a><a href="controlador.php?acao=protocolo_modelo_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_protocolo=55596369&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=e6576f6940dc44ef28e901d0b3d3286d164017a3b571dad99c3c51167a5b993b" tabindex="452" ><img  src="svg/documento_modelo.svg?11" alt="Adicionar aos Favoritos" title="Adicionar aos Favoritos"/></a><a target="_blank" href="controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=55596369&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=dbc7a28eb47eea318988bc4bb12fc772b6dadcf09389bef1c584cceb0f76926b" tabindex="452" ><img  src="svg/documento_imprimir.svg?11" alt="Imprimir Web" title="Imprimir Web" /></a><a href="controlador.php?acao=procedimento_gerar_pdf&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=55596369&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=50142c7d72309984dd2957537ed7cfb1f6b6733b1b1f4da3ed63025e774e39bc" tabindex="452" ><img  src="svg/documento_gerar_pdf.svg?11" alt="Gerar Arquivo PDF do Documento" title="Gerar Arquivo PDF do Documento"/></a><a href="controlador.php?acao=comentario_listar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_rel_protocolo_protocolo=53513104&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=111662c2da9789c0393ec32d20dfd9d9400d10f5891c12167a789258384e3834" tabindex="452" ><img  src="svg/comentario.svg?11" alt="Comentários" title="Comentários"/></a><a href="#" onclick="reabrirProcesso();" tabindex="452" ><img src="svg/processo_reabrir.svg?11" alt="Reabrir Processo" title="Reabrir Processo" />';
+Nos[1].src = 'controlador.php?acao=documento_visualizar&acao_origem=procedimento_visualizar&id_documento=55596369&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=c9504e6567ca4445093529ea124aa9f0399be9c3070ea21fde50a13ad98ec37b';
+Nos[1].html = '';
+
+
+//CA=-900
+Nos[2] = new infraArvoreNo("DOCUMENTO","55799108","55596367","about:blank","ifrVisualizacao","ANEXO Minuta da Política de Segurança da Informação - PSI (54686008)","Documento Cancelado: Retificado 58201342","svg/documento_cancelado.svg?11","svg/documento_cancelado.svg?11","svg/documento_cancelado.svg?11",true,false,null,null,null,"54686008");
+Nos[2].acoes = '';
+Nos[2].src = '';
+Nos[2].html = '';
+
+
+//CA=310
+Nos[3] = new infraArvoreNo("DOCUMENTO","59700215","55596367","controlador.php?acao=arvore_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&id_documento=59700215&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=2538d345c12413130c9f24bfe230c142146d418991bbda37519ee6567c4422b5","ifrVisualizacao","ANEXO Minuta da Política de Segurança da Informação da Seinfra (58201342)","ANEXO Minuta da Política de Segurança da Informação da Seinfra (58201342)","svg/documento_word.svg?11","svg/documento_word.svg?11","svg/documento_word.svg?11",true,true,null,null,"noVisitado","58201342");
+Nos[3].assinatura = '';
+Nos[3].acoes = '<a href="controlador.php?acao=documento_consultar_recebido&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=59700215&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=a4c3053fe1b0a93742f44ebf7a4cbc2de51105cf14101a2e0431fc970956793f" tabindex="452" ><img  src="svg/documento_alterar.svg?11" alt="Consultar Documento Externo" title="Consultar Documento Externo" /></a><a href="controlador.php?acao=acompanhamento_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=cd83a83bd79da68fb8d7eff61be0415db347e8fbcf53f8346d33d52122301861" tabindex="452" ><img  src="svg/acompanhamento_especial_cadastro.svg?11" alt="Acompanhamento Especial" title="Acompanhamento Especial"/></a><a href="controlador.php?acao=protocolo_modelo_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_protocolo=59700215&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=aaf1c40f56cbd9769342bd01af01d4a1da73689dd13264ae563e5e2237c99918" tabindex="452" ><img  src="svg/documento_modelo.svg?11" alt="Adicionar aos Favoritos" title="Adicionar aos Favoritos"/></a><a href="controlador.php?acao=comentario_listar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_rel_protocolo_protocolo=57204178&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=4558577b4c162b070f956bf74740eee5a0c2a2fbd5654f39db660aad23a99ba6" tabindex="452" ><img  src="svg/comentario.svg?11" alt="Comentários" title="Comentários"/></a><a href="#" onclick="reabrirProcesso();" tabindex="452" ><img src="svg/processo_reabrir.svg?11" alt="Reabrir Processo" title="Reabrir Processo" />';
+Nos[3].src = 'controlador.php?acao=documento_download_anexo&acao_origem=procedimento_visualizar&id_anexo=28632530&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=9c66c7c444de5bd5b254c434e0efe4010cc63af1ed4fe444ef551cd2b52fa60d';
+Nos[3].html = 'Clique <a href="controlador.php?acao=documento_download_anexo&acao_origem=procedimento_visualizar&id_anexo=28632530&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=b1703a70d63ac8dcea016fe0732adea5aebb4902a288d8e2ab225023b7670d01" target="_blank" class="ancoraVisualizacaoArvore">aqui</a> para visualizar o conteúdo deste documento em uma nova janela.';
+
+
+//CA=310
+Nos[4] = new infraArvoreNo("DOCUMENTO","59700422","55596367","controlador.php?acao=arvore_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&id_documento=59700422&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=e8923fb96f0c6e2bd493abfcad461cf4b77d76366801678947769635266fcfe1","ifrVisualizacao","ANEXO Minuta da Política de Segurança da Informação da Sinfra (58201561)","ANEXO Minuta da Política de Segurança da Informação da Sinfra (58201561)","svg/documento_pdf.svg?11","svg/documento_pdf.svg?11","svg/documento_pdf.svg?11",true,true,null,null,"noVisitado","58201561");
+Nos[4].assinatura = '';
+Nos[4].acoes = '<a href="controlador.php?acao=documento_consultar_recebido&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=59700422&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=19331335197ea50135499d96eea6ce98b277c6bc190609e008375f285b21fc1e" tabindex="452" ><img  src="svg/documento_alterar.svg?11" alt="Consultar Documento Externo" title="Consultar Documento Externo" /></a><a href="controlador.php?acao=acompanhamento_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=cd83a83bd79da68fb8d7eff61be0415db347e8fbcf53f8346d33d52122301861" tabindex="452" ><img  src="svg/acompanhamento_especial_cadastro.svg?11" alt="Acompanhamento Especial" title="Acompanhamento Especial"/></a><a href="controlador.php?acao=protocolo_modelo_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_protocolo=59700422&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=f8915dd8b360d0ed531c4c8725ae42695138312432818909d066ab4fe85d6757" tabindex="452" ><img  src="svg/documento_modelo.svg?11" alt="Adicionar aos Favoritos" title="Adicionar aos Favoritos"/></a><a href="controlador.php?acao=comentario_listar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_rel_protocolo_protocolo=57204376&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=9171db6670b45c121df5c02cae521a7297f6c486543e5ac95ebb33d61e78fef0" tabindex="452" ><img  src="svg/comentario.svg?11" alt="Comentários" title="Comentários"/></a><a href="#" onclick="reabrirProcesso();" tabindex="452" ><img src="svg/processo_reabrir.svg?11" alt="Reabrir Processo" title="Reabrir Processo" />';
+Nos[4].src = 'controlador.php?acao=documento_download_anexo&acao_origem=procedimento_visualizar&id_anexo=28632634&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=b38fda50f5f8e338a7ab9fea8a638dcf3badddda71dce0f1aff4edf9d4f4ea7c';
+Nos[4].html = 'Clique <a href="controlador.php?acao=documento_download_anexo&acao_origem=procedimento_visualizar&id_anexo=28632634&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=576d019d64f14ec2b4555c24ef6573b36abed463438af8b1d695c7888ff5002b" target="_blank" class="ancoraVisualizacaoArvore">aqui</a> para visualizar o conteúdo deste documento em uma nova janela.';
+
+
+//CA=330
+Nos[5] = new infraArvoreNo("DOCUMENTO","59631772","55596367","controlador.php?acao=arvore_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&id_documento=59631772&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=d4f98c32b09c8302e0feec129154dbae070d3df526745e4515bf7928d797d6b5","ifrVisualizacao","Despacho 51 (58139608)","Despacho 51 (58139608)","svg/documento_interno.svg?11","svg/documento_interno.svg?11","svg/documento_interno.svg?11",true,true,null,null,"noVisitado","58139608");
+Nos[5].acoes = '<a href="controlador.php?acao=documento_consultar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=59631772&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=71f1e8ba7afebc31414856a5bfd7fba356ebd56632617db910c0a7f7c76fa3cc" tabindex="452" ><img  src="svg/documento_alterar.svg?11" alt="Consultar Documento" title="Consultar Documento" /></a><a href="controlador.php?acao=acompanhamento_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=cd83a83bd79da68fb8d7eff61be0415db347e8fbcf53f8346d33d52122301861" tabindex="452" ><img  src="svg/acompanhamento_especial_cadastro.svg?11" alt="Acompanhamento Especial" title="Acompanhamento Especial"/></a><a href="controlador.php?acao=protocolo_modelo_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_protocolo=59631772&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=97008f20911b711f2647129fe08ea46cb06213a3a6c2bd67974a63e5d99daf7d" tabindex="452" ><img  src="svg/documento_modelo.svg?11" alt="Adicionar aos Favoritos" title="Adicionar aos Favoritos"/></a><a target="_blank" href="controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=59631772&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=ae3b258a0f6e04f041e3a9099df3382a20ed4e2fb8bf9703166369a9c559d057" tabindex="452" ><img  src="svg/documento_imprimir.svg?11" alt="Imprimir Web" title="Imprimir Web" /></a><a href="controlador.php?acao=procedimento_gerar_pdf&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=59631772&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=f569d493e0cc623b3950d5c8fa369dd70b681994a761c651d788806c93d76c46" tabindex="452" ><img  src="svg/documento_gerar_pdf.svg?11" alt="Gerar Arquivo PDF do Documento" title="Gerar Arquivo PDF do Documento"/></a><a href="controlador.php?acao=comentario_listar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_rel_protocolo_protocolo=57141808&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=0a92558a050dbf4ed9ae680668d0018c97acad2690a7f917676735d6a96658c7" tabindex="452" ><img  src="svg/comentario.svg?11" alt="Comentários" title="Comentários"/></a><a href="#" onclick="reabrirProcesso();" tabindex="452" ><img src="svg/processo_reabrir.svg?11" alt="Reabrir Processo" title="Reabrir Processo" />';
+Nos[5].src = 'controlador.php?acao=documento_visualizar&acao_origem=procedimento_visualizar&id_documento=59631772&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=8ec994b6451ff15f3a1223ca5666f597f988630cc2f17a8460021e14f410227c';
+Nos[5].html = '';
+
+
+//CA=330
+Nos[6] = new infraArvoreNo("DOCUMENTO","60276730","55596367","controlador.php?acao=arvore_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&id_documento=60276730&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=3a52b6209d66eaa9c28f85f66072909f89020728fedbf3eed68db96f3d7972a3","ifrVisualizacao","Despacho 111 (58720595)","Despacho 111 (58720595)","svg/documento_interno.svg?11","svg/documento_interno.svg?11","svg/documento_interno.svg?11",true,true,null,null,"noVisitado","58720595");
+Nos[6].acoes = '<a href="controlador.php?acao=documento_consultar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60276730&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=64ea0661711ba4156603907462f19fc059606d2470f6689bf7793d5240fde483" tabindex="452" ><img  src="svg/documento_alterar.svg?11" alt="Consultar Documento" title="Consultar Documento" /></a><a href="controlador.php?acao=acompanhamento_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=cd83a83bd79da68fb8d7eff61be0415db347e8fbcf53f8346d33d52122301861" tabindex="452" ><img  src="svg/acompanhamento_especial_cadastro.svg?11" alt="Acompanhamento Especial" title="Acompanhamento Especial"/></a><a href="controlador.php?acao=protocolo_modelo_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_protocolo=60276730&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=38a23946bbf98f9354f3a808a110ed9735e216ff43a429999fe6a778876b264e" tabindex="452" ><img  src="svg/documento_modelo.svg?11" alt="Adicionar aos Favoritos" title="Adicionar aos Favoritos"/></a><a target="_blank" href="controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=60276730&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=705b0d9315c40e5004f25b5e7ce2b27920eeb97a9741f77d73b27206df71fb6d" tabindex="452" ><img  src="svg/documento_imprimir.svg?11" alt="Imprimir Web" title="Imprimir Web" /></a><a href="controlador.php?acao=procedimento_gerar_pdf&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60276730&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=5fb228134687f5f1c46c17dfd6a74c2cc67180e84f41b62c623d17d6cc1409f8" tabindex="452" ><img  src="svg/documento_gerar_pdf.svg?11" alt="Gerar Arquivo PDF do Documento" title="Gerar Arquivo PDF do Documento"/></a><a href="controlador.php?acao=comentario_listar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_rel_protocolo_protocolo=57727821&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=16d7e360546afe27552ce9a4059f0c9db9bd6c8e0c19faa5d250e1949fff2fed" tabindex="452" ><img  src="svg/comentario.svg?11" alt="Comentários" title="Comentários"/></a><a href="#" onclick="reabrirProcesso();" tabindex="452" ><img src="svg/processo_reabrir.svg?11" alt="Reabrir Processo" title="Reabrir Processo" />';
+Nos[6].src = 'controlador.php?acao=documento_visualizar&acao_origem=procedimento_visualizar&id_documento=60276730&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=e8d02effa9bfadac6172962df322ab42d8b1f042ba47e9e8fc00890fb55c27ba';
+Nos[6].html = '';
+
+
+//CA=330
+Nos[7] = new infraArvoreNo("DOCUMENTO","60391616","55596367","controlador.php?acao=arvore_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&id_documento=60391616&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=808833d4bba5b4cf96bf0cc6f9acdcd05d287bcc35d81a68f0dff6185edbdb92","ifrVisualizacao","Despacho 65 (58824138)","Despacho 65 (58824138)","svg/documento_interno.svg?11","svg/documento_interno.svg?11","svg/documento_interno.svg?11",true,true,null,null,"noVisitado","58824138");
+Nos[7].acoes = '<a href="controlador.php?acao=documento_consultar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60391616&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=f81e3973cfff954d5745d3ac0b3441b2ff438aedb2337babb8989b71503e3ac3" tabindex="452" ><img  src="svg/documento_alterar.svg?11" alt="Consultar Documento" title="Consultar Documento" /></a><a href="controlador.php?acao=acompanhamento_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=cd83a83bd79da68fb8d7eff61be0415db347e8fbcf53f8346d33d52122301861" tabindex="452" ><img  src="svg/acompanhamento_especial_cadastro.svg?11" alt="Acompanhamento Especial" title="Acompanhamento Especial"/></a><a href="controlador.php?acao=protocolo_modelo_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_protocolo=60391616&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=ebb4c862a2fb453c5d89c7a50b3d215f5556fee64bec2341b8b8eb733a479d1b" tabindex="452" ><img  src="svg/documento_modelo.svg?11" alt="Adicionar aos Favoritos" title="Adicionar aos Favoritos"/></a><a target="_blank" href="controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=60391616&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=4156eb57583cb709347f05833422dbc682408187675eb6874b667ddbe5d0eed3" tabindex="452" ><img  src="svg/documento_imprimir.svg?11" alt="Imprimir Web" title="Imprimir Web" /></a><a href="controlador.php?acao=procedimento_gerar_pdf&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60391616&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=44e56b3b2c013dc52000e884306264a6f12f4e47fc293f69549ceb2ff3defa15" tabindex="452" ><img  src="svg/documento_gerar_pdf.svg?11" alt="Gerar Arquivo PDF do Documento" title="Gerar Arquivo PDF do Documento"/></a><a href="controlador.php?acao=comentario_listar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_rel_protocolo_protocolo=57832314&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=e649ce2ad57b8dc67d2e6029a2c2603a5a4626ddac9bc28de39a9141554780af" tabindex="452" ><img  src="svg/comentario.svg?11" alt="Comentários" title="Comentários"/></a><a href="#" onclick="reabrirProcesso();" tabindex="452" ><img src="svg/processo_reabrir.svg?11" alt="Reabrir Processo" title="Reabrir Processo" />';
+Nos[7].src = 'controlador.php?acao=documento_visualizar&acao_origem=procedimento_visualizar&id_documento=60391616&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=a9e5f533442829d4497202fb219d0fcfe34e07c415962a39ead8327ef5644a84';
+Nos[7].html = '';
+
+
+//CA=330
+Nos[8] = new infraArvoreNo("DOCUMENTO","60571318","55596367","controlador.php?acao=arvore_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&id_documento=60571318&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=16747f8d918aa47cdb32af69af524441f824937d29eba4c95811548012260fad","ifrVisualizacao","Portaria 090 Política de Segurança da Informação - SEINFRA (58986151)","Portaria 090 Política de Segurança da Informação - SEINFRA (58986151)","svg/documento_interno.svg?11","svg/documento_interno.svg?11","svg/documento_interno.svg?11",true,true,null,null,"noVisitado","58986151");
+Nos[8].acoes = '<a href="controlador.php?acao=documento_consultar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=85b4d365390d29eb7601237684131fdedeef67cf731aaab08a7f9e1cdca6ee7d" tabindex="452" ><img  src="svg/documento_alterar.svg?11" alt="Consultar Documento" title="Consultar Documento" /></a><a href="controlador.php?acao=acompanhamento_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=cd83a83bd79da68fb8d7eff61be0415db347e8fbcf53f8346d33d52122301861" tabindex="452" ><img  src="svg/acompanhamento_especial_cadastro.svg?11" alt="Acompanhamento Especial" title="Acompanhamento Especial"/></a><a href="controlador.php?acao=protocolo_modelo_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_protocolo=60571318&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=79edfa3c882a96ce94da0b84ccb1ef0677ad47c88564acee6ded23ec6c6610d9" tabindex="452" ><img  src="svg/documento_modelo.svg?11" alt="Adicionar aos Favoritos" title="Adicionar aos Favoritos"/></a><a target="_blank" href="controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=60571318&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=d2f5a6776513158ba8a5c6a2fff37d24e421669e2ed43b46a8a05f9ea0205c34" tabindex="452" ><img  src="svg/documento_imprimir.svg?11" alt="Imprimir Web" title="Imprimir Web" /></a><a href="controlador.php?acao=procedimento_gerar_pdf&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60571318&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=e1f88ebcaf8af935bc976d3ea8d549b79dfb4ec2df2c3a65f2715f6bb4a4e92e" tabindex="452" ><img  src="svg/documento_gerar_pdf.svg?11" alt="Gerar Arquivo PDF do Documento" title="Gerar Arquivo PDF do Documento"/></a><a href="controlador.php?acao=comentario_listar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_rel_protocolo_protocolo=57996059&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=fff12bcd02a8dc1d41a3c060a0956b46127b2457a9c42923ba6781f533cd1eb3" tabindex="452" ><img  src="svg/comentario.svg?11" alt="Comentários" title="Comentários"/></a><a href="#" onclick="reabrirProcesso();" tabindex="452" ><img src="svg/processo_reabrir.svg?11" alt="Reabrir Processo" title="Reabrir Processo" />';
+Nos[8].src = 'controlador.php?acao=documento_visualizar&acao_origem=procedimento_visualizar&id_documento=60571318&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=b6287a33581287261726b3f106950756e6f8b734728303182132aa9cd615aeec';
+Nos[8].html = '';
+
+
+//CA=310
+Nos[9] = new infraArvoreNo("DOCUMENTO","60661462","55596367","controlador.php?acao=arvore_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&id_documento=60661462&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=aa9966a0233b31f35aaa1dea1c6a52022a8c8d55902675d93ce8506897805ab7","ifrVisualizacao","Publicação DOE - Portaria n. 090 de 12/04/2024. (59067546)","Publicação DOE - Portaria n. 090 de 12/04/2024. (59067546)","svg/documento_pdf.svg?11","svg/documento_pdf.svg?11","svg/documento_pdf.svg?11",true,true,null,null,"noVisitado","59067546");
+Nos[9].assinatura = '';
+Nos[9].acoes = '<a href="controlador.php?acao=documento_consultar_recebido&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60661462&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=35afbea9f7cb9b120af5a4ea711d1ee673548cecd67316d8c352442febe3825c" tabindex="452" ><img  src="svg/documento_alterar.svg?11" alt="Consultar Documento Externo" title="Consultar Documento Externo" /></a><a href="controlador.php?acao=acompanhamento_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=cd83a83bd79da68fb8d7eff61be0415db347e8fbcf53f8346d33d52122301861" tabindex="452" ><img  src="svg/acompanhamento_especial_cadastro.svg?11" alt="Acompanhamento Especial" title="Acompanhamento Especial"/></a><a href="controlador.php?acao=protocolo_modelo_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_protocolo=60661462&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=ffed8c0b5736a4823097f5898a5a3e9ff4f026a636f6581c7e904636d9a74109" tabindex="452" ><img  src="svg/documento_modelo.svg?11" alt="Adicionar aos Favoritos" title="Adicionar aos Favoritos"/></a><a href="controlador.php?acao=comentario_listar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_rel_protocolo_protocolo=58078461&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=102c9b8ba411fcc7bb1697ecac37e01571fa6c378e870f3c04958bc21ca8d593" tabindex="452" ><img  src="svg/comentario.svg?11" alt="Comentários" title="Comentários"/></a><a href="#" onclick="reabrirProcesso();" tabindex="452" ><img src="svg/processo_reabrir.svg?11" alt="Reabrir Processo" title="Reabrir Processo" />';
+Nos[9].src = 'controlador.php?acao=documento_download_anexo&acao_origem=procedimento_visualizar&id_anexo=29098791&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=4271572757d52492688478f157225cecd7e754f9715b5cb03048fb3c355fdda8';
+Nos[9].html = 'Clique <a href="controlador.php?acao=documento_download_anexo&acao_origem=procedimento_visualizar&id_anexo=29098791&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=9bfbc8e96bddda08ae24d7ee38b000765327c911a85cf7089d10a639b2bcfa9d" target="_blank" class="ancoraVisualizacaoArvore">aqui</a> para visualizar o conteúdo deste documento em uma nova janela.';
+
+
+//CA=330
+Nos[10] = new infraArvoreNo("DOCUMENTO","60661740","55596367","controlador.php?acao=arvore_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&id_documento=60661740&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=83478b38e71c83a2cf487009470b2211ef7b9cb4fd4bdd1c9d2a117a1e7cb4d3","ifrVisualizacao","Despacho 239 (59067873)","Despacho 239 (59067873)","svg/documento_interno.svg?11","svg/documento_interno.svg?11","svg/documento_interno.svg?11",true,true,null,null,"noVisitado","59067873");
+Nos[10].acoes = '<a href="controlador.php?acao=documento_consultar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60661740&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=cee335ed579a6e1b9536fb88a3880bbb446b56e2b04a03ba66d824c1586586a3" tabindex="452" ><img  src="svg/documento_alterar.svg?11" alt="Consultar Documento" title="Consultar Documento" /></a><a href="controlador.php?acao=acompanhamento_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=cd83a83bd79da68fb8d7eff61be0415db347e8fbcf53f8346d33d52122301861" tabindex="452" ><img  src="svg/acompanhamento_especial_cadastro.svg?11" alt="Acompanhamento Especial" title="Acompanhamento Especial"/></a><a href="controlador.php?acao=protocolo_modelo_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_protocolo=60661740&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=9966458d9c2425dfcd550f97ca9242dd454c578e8a295e5f402a8ae650e1f190" tabindex="452" ><img  src="svg/documento_modelo.svg?11" alt="Adicionar aos Favoritos" title="Adicionar aos Favoritos"/></a><a target="_blank" href="controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=60661740&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=c8fe4dd30fb191ba3a6839f8dd9a4846f5800033617b9daf0c78271ec5579c50" tabindex="452" ><img  src="svg/documento_imprimir.svg?11" alt="Imprimir Web" title="Imprimir Web" /></a><a href="controlador.php?acao=procedimento_gerar_pdf&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_documento=60661740&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=ea3a8d84d315f1a960eed18d2ff072ab1305ee51364bb7396d45609932129c9a" tabindex="452" ><img  src="svg/documento_gerar_pdf.svg?11" alt="Gerar Arquivo PDF do Documento" title="Gerar Arquivo PDF do Documento"/></a><a href="controlador.php?acao=comentario_listar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&id_rel_protocolo_protocolo=58078781&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=ed0f6424a447a59e97e65be1762d2bfbe0ad70afbaa714e135678fe0c9df0e8e" tabindex="452" ><img  src="svg/comentario.svg?11" alt="Comentários" title="Comentários"/></a><a href="#" onclick="reabrirProcesso();" tabindex="452" ><img src="svg/processo_reabrir.svg?11" alt="Reabrir Processo" title="Reabrir Processo" />';
+Nos[10].src = 'controlador.php?acao=documento_visualizar&acao_origem=procedimento_visualizar&id_documento=60661740&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=bb1b4c46640f8a8842e13026611308ce457db65b9aac00f7a5acfaa8f95a8485';
+Nos[10].html = '';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    NosAcoes[0] = new infraArvoreAcao("LINHA_DIRETA","LD55596367","55596367","controlador.php?acao=procedimento_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&linha_direta=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=8a764f80b3f9264d5c5d864fcbd0dd764a1cd15cb852e629f669612233105a78",null,"Filtrar Linha Direta","svg/linha_direta1.svg?11",true);
+NosAcoes[1] = new infraArvoreAcao("MARCADOR","MC55596367","55596367","controlador.php?acao=andamento_marcador_gerenciar&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=712e91bfd3dfe05c59aa81910a56a464d63f57dc790708f976f7d1f948ca20bf","ifrVisualizacao","Marcador\nUrgente","svg/marcador_preto.svg?11",true);
+NosAcoes[2] = new infraArvoreAcao("CIENCIAS","C","55596367","controlador.php?acao=protocolo_ciencia_listar&acao_origem=procedimento_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=34625db523510d474e75ae4952ef9fde788fa4eb54722b0e73e8f661e99c0978","ifrVisualizacao","Visualizar Ciências","svg/ciencia.svg?11",true);
+NosAcoes[3] = new infraArvoreAcao("UNIDADE_GERADORA","UG55596369","55596369","javascript:alert('SEINFRA/STI-21767 - SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO');",null,"SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO",null,true,"SEINFRA/STI-21767");
+NosAcoes[4] = new infraArvoreAcao("ASSINATURA","A55596369","55596369","javascript:alert('Assinado por:\\nJUNYOR MANOEL DE ARAUJO RAMOS\\nGerente\\nSEINFRA/STI-21767\\n\\nTATIANA LISITA RIBERA\\nSuperintendente\\nSEINFRA/STI-21767');",null,"Assinado por:\nJUNYOR MANOEL DE ARAUJO RAMOS\nGerente\nSEINFRA/STI-21767\n\nTATIANA LISITA RIBERA\nSuperintendente\nSEINFRA/STI-21767","svg/assinatura2.svg?11",true);
+NosAcoes[5] = new infraArvoreAcao("UNIDADE_GERADORA","UG55799108","55799108","javascript:alert('SEINFRA/STI-21767 - SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO');",null,"SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO",null,true,"SEINFRA/STI-21767");
+NosAcoes[6] = new infraArvoreAcao("UNIDADE_GERADORA","UG59700215","59700215","javascript:alert('SEINFRA/STI-21767 - SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO');",null,"SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO",null,true,"SEINFRA/STI-21767");
+NosAcoes[7] = new infraArvoreAcao("UNIDADE_GERADORA","UG59700422","59700422","javascript:alert('SEINFRA/STI-21767 - SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO');",null,"SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO",null,true,"SEINFRA/STI-21767");
+NosAcoes[8] = new infraArvoreAcao("UNIDADE_GERADORA","UG59631772","59631772","javascript:alert('SEINFRA/SPHPI-21766 - SUBSECRETARIA DE POLÍTICAS HABITACIONAIS, PARCERIAS E INOVAÇÃO');",null,"SUBSECRETARIA DE POLÍTICAS HABITACIONAIS, PARCERIAS E INOVAÇÃO",null,true,"SEINFRA/SPHPI-21766");
+NosAcoes[9] = new infraArvoreAcao("ASSINATURA","A59631772","59631772","javascript:alert('Assinado por:\\nELIANE SIMONINI BALTAZAR\\nSubsecretário (a)\\nSEINFRA/SUBPPPI-21766');",null,"Assinado por:\nELIANE SIMONINI BALTAZAR\nSubsecretário (a)\nSEINFRA/SUBPPPI-21766","svg/assinatura2.svg?11",true);
+NosAcoes[10] = new infraArvoreAcao("UNIDADE_GERADORA","UG60276730","60276730","javascript:alert('SEINFRA/PROCSET-20943 - PROCURADORIA SETORIAL');",null,"PROCURADORIA SETORIAL",null,true,"SEINFRA/PROCSET-20943");
+NosAcoes[11] = new infraArvoreAcao("ASSINATURA","A60276730","60276730","javascript:alert('Assinado por:\\nJULIO GOMES\\nProcurador (a) do Estado\\nSEINFRA/PROCSET-20943');",null,"Assinado por:\nJULIO GOMES\nProcurador (a) do Estado\nSEINFRA/PROCSET-20943","svg/assinatura2.svg?11",true);
+NosAcoes[12] = new infraArvoreAcao("UNIDADE_GERADORA","UG60391616","60391616","javascript:alert('SEINFRA/SPHPI-21766 - SUBSECRETARIA DE POLÍTICAS HABITACIONAIS, PARCERIAS E INOVAÇÃO');",null,"SUBSECRETARIA DE POLÍTICAS HABITACIONAIS, PARCERIAS E INOVAÇÃO",null,true,"SEINFRA/SPHPI-21766");
+NosAcoes[13] = new infraArvoreAcao("ASSINATURA","A60391616","60391616","javascript:alert('Assinado por:\\nELIANE SIMONINI BALTAZAR\\nSubsecretário (a)\\nSEINFRA/SUBPPPI-21766');",null,"Assinado por:\nELIANE SIMONINI BALTAZAR\nSubsecretário (a)\nSEINFRA/SUBPPPI-21766","svg/assinatura2.svg?11",true);
+NosAcoes[14] = new infraArvoreAcao("UNIDADE_GERADORA","UG60571318","60571318","javascript:alert('SEINFRA/GESG-20946 - GERÊNCIA DA SECRETARIA GERAL');",null,"GERÊNCIA DA SECRETARIA GERAL",null,true,"SEINFRA/GESG-20946");
+NosAcoes[15] = new infraArvoreAcao("ASSINATURA","A60571318","60571318","javascript:alert('Assinado por:\\nPEDRO HENRIQUE RAMOS SALES\\nSecretário (a) de Estado\\nSEINFRA/GAB-20941');",null,"Assinado por:\nPEDRO HENRIQUE RAMOS SALES\nSecretário (a) de Estado\nSEINFRA/GAB-20941","svg/assinatura2.svg?11",true);
+NosAcoes[16] = new infraArvoreAcao("UNIDADE_GERADORA","UG60661462","60661462","javascript:alert('SEINFRA/GESG-20946 - GERÊNCIA DA SECRETARIA GERAL');",null,"GERÊNCIA DA SECRETARIA GERAL",null,true,"SEINFRA/GESG-20946");
+NosAcoes[17] = new infraArvoreAcao("UNIDADE_GERADORA","UG60661740","60661740","javascript:alert('SEINFRA/GESG-20946 - GERÊNCIA DA SECRETARIA GERAL');",null,"GERÊNCIA DA SECRETARIA GERAL",null,true,"SEINFRA/GESG-20946");
+NosAcoes[18] = new infraArvoreAcao("ASSINATURA","A60661740","60661740","javascript:alert('Assinado por:\\nVALERIA RODRIGUES\\nGerente\\nSEINFRA/GESG-20946');",null,"Assinado por:\nVALERIA RODRIGUES\nGerente\nSEINFRA/GESG-20946","svg/assinatura2.svg?11",true);
+NosAcoes[19] = new infraArvoreAcao("CIENCIAS","CD60661740","60661740","controlador.php?acao=protocolo_ciencia_listar&acao_origem=procedimento_visualizar&id_procedimento=55596367&id_documento=60661740&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=9d9683fe0565560d527e281317508d858148f388845717dc576be87d20196097","ifrVisualizacao","Visualizar Ciências no Documento","svg/ciencia.svg?11",true);
+
+
+
+    objArvore = new infraArvore('divArvore', Nos, NosAcoes, 'hdnArvore', 'topmenu', 24);
+
+    objArvore.processar = function(no){
+      if(!parent.infraIsBreakpointBootstrap('lg') && (no instanceof infraArvoreNo || (no instanceof infraArvoreAcao && no.target == "ifrVisualizacao" && no.href != "javascript:void"))) {
+        parent.document.getElementById('ifrVisualizacao').onload = function() {
+          if(!parent.infraIsBreakpointBootstrap('lg')) {
+            parent.document.getElementById('divIframeVisualizacao').style.cssText = "display:block !important;";
+            parent.document.getElementById('divIframeArvore').style.cssText = "display:none !important;";
+          }
+        }
+      }
+      return no;
+    }
+
+    objArvore.getNoAnterior = function(nodeId){
+      var i,j,n;
+      n = this.nodes.length;
+
+      if (n > 1) {
+
+        for (i = 0; i < n; i++) {
+          if (this.nodes[i].id==nodeId) {
+            break;
+          }
+        }
+
+        if (i > 0){
+
+          if (this.nodes[i-1].tipo == 'FEDERACAO' || this.nodes[i-1].tipo=='INSTALACAO_FEDERACAO' || this.nodes[i-1].tipo=='ORGAO_FEDERACAO'){
+            return this.nodes[0];
+          }
+
+          if (this.nodes[i].tipo == 'PASTA'){
+
+            for(j=n-1;j>i;j--){
+              if (this.nodes[j].idPai==this.nodes[i].id && this.nodes[j].tipo != 'AGUARDE'){
+                return this.nodes[j];
+              }
+            }
+
+            for(j=i-1;j>0;j--){
+              if (this.nodes[j].tipo == 'PASTA'){
+                return this.nodes[j];
+              }
+            }
+
+          }else{
+            if (this.nodes[i-1].idPai == this.nodes[i].idPai || this.nodes[i-1].idPai == null){
+              return this.nodes[i-1];
+            }else{
+              for (j=1;j<n;j++){
+                if (this.nodes[j].tipo == 'PASTA' && this.nodes[j].id==this.nodes[i].idPai) {
+                  if (this.nodes[j-1].tipo == 'PROCESSO'){
+                    return this.nodes[j-1];
+                  }else if (this.nodes[j-1].tipo == 'AGUARDE'){
+                    return this.nodes[j-2];
+                  }else if (this.nodes[j-1].tipo == 'PASTA'){
+                    return this.nodes[j-1];
+                  }
+                  break;
+                }
+              }
+            }
+          }
+        }
+      }
+      return null;
+    }
+
+    objArvore.getNoProximo = function(nodeId){
+      var i,j,k,n;
+      n = this.nodes.length;
+
+      if (n > 1) {
+
+        for (i = 0; i < n; i++) {
+          if (this.nodes[i].id==nodeId) {
+            break;
+          }
+        }
+
+        if (i < n){
+
+          if (i==0){
+
+            if (this.nodes[1].tipo == 'FEDERACAO'){
+              for (j=1;j<n;j++){
+                if (this.nodes[j].tipo != 'FEDERACAO' && this.nodes[j].tipo!='INSTALACAO_FEDERACAO' && this.nodes[j].tipo!='ORGAO_FEDERACAO'){
+                  return this.nodes[j];
+                }
+              }
+            }else{
+              return this.nodes[1];
+            }
+          }
+
+          if (this.nodes[i].tipo == 'PASTA'){
+
+            if (this.nodes[i].carregado){
+              for(j=i+1;j<n;j++){
+                if (this.nodes[j].idPai==this.nodes[i].id && this.nodes[j].tipo != 'AGUARDE'){
+                  return this.nodes[j];
+                }
+              }
+
+              for(j=i+1;j<n;j++){
+                if (this.nodes[j].tipo == 'PASTA'){
+                  return this.nodes[j];
+                }
+              }
+            }else {
+              return this.nodes[i];
+            }
+
+          }else{
+            if ((i < n - 1) && this.nodes[i+1].idPai == this.nodes[i].idPai){
+              return this.nodes[i+1];
+            }else{
+              for (j=1;j<n;j++){
+                if (this.nodes[j].tipo == 'PASTA' && this.nodes[j].id==this.nodes[i].idPai){
+                  for(k=j+1;k<n;k++){
+                    if (this.nodes[k].tipo == 'PASTA'){
+                      return this.nodes[k];
+                    }
+                  }
+                  break;
+                }
+              }
+            }
+          }
+        }
+      }
+      return null;
+    }
+
+      
+    if (Nos.length){
+
+      Nos[0].processar = function (){
+        if(!parent.infraIsBreakpointBootstrap("lg")) {
+          parent.document.getElementById('ifrVisualizacao').src = "about:blank";
+          parent.document.getElementById('divIframeVisualizacao').style.cssText  = "display:block !important;";
+          parent.document.getElementById('divIframeArvore').style.cssText  = "display:none !important;";
+        }
+        document.location = 'controlador.php?acao=procedimento_visualizar&acao_origem=procedimento_visualizar&id_procedimento=55596367&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=2fedd24ab14a871786c29641045afa3af556741295ce993bbd50c687ea305261';
+
+        return false;
+      }
+
+      if  (typeof(Clipboard) != 'undefined'){
+
+        associarNosClipboard(Nos);
+      }
+    }
+
+    objArvore.processarAbertura = function(no){
+
+      if (no.tipo.indexOf('FEDERACAO') != -1) {
+        return true;
+      }
+
+      processarIframe = true;
+
+      if (!processandoPasta){
+        if (!no.carregado){
+          document.getElementById('hdnPastaAtual').value = no.id;
+          document.getElementById('hdnProtocolos').value = Pastas[no.id.substr(5)]['protocolos'];
+          document.getElementById('frmArvore').action = Pastas[no.id.substr(5)]['link'];
+          document.getElementById('frmArvore').submit();
+        }
+
+        document.getElementById('anchorFP55596367').style.display='';
+
+        objArvore.numPastasAbertas = objArvore.numPastasAbertas + 1;
+        if (objArvore.numPastasAbertas == 0){
+          document.getElementById('anchorAP55596367').style.display='none';
+        }
+
+        return true;
+      }
+
+      return false;
+    }
+
+    objArvore.processarFechamento = function(no){
+
+      if (no.tipo.indexOf('FEDERACAO') != -1) {
+        return true;
+      }
+
+      document.getElementById('hdnPastaAtual').value = no.id;
+      atualizarMensagemPasta('AGUARDE');
+      document.getElementById('anchorAP55596367').style.display='';
+      objArvore.numPastasAbertas = objArvore.numPastasAbertas - 1;
+      if (objArvore.numPastasAbertas == 0){
+        document.getElementById('anchorFP55596367').style.display='none';
+      }
+
+      return true;
+    }
+
+    var objNoSelecionado = null;
+    if ('' != ''){
+      objNoSelecionado = objArvore.getNo('');
+    }else if ('' != ''){
+      objNoSelecionado = objArvore.getNo('');
+    }else if(parent.infraIsBreakpointBootstrap("lg")){
+      objNoSelecionado = objArvore.getNo('55596367');
+    }else{
+      objNoSelecionado = objArvore.getNo('55596367');
+    }
+
+    if (objNoSelecionado != null){
+      objArvore.setNoSelecionado(objNoSelecionado);
+            self.setTimeout('atualizarVisualizacao()',100);
+          }
+  }
+
+  function atualizarVisualizacao(){
+    if (objArvore != null) {
+      var no = objArvore.getNoSelecionado();
+      if (no != null) {
+        parent.document.getElementById('ifrVisualizacao').src = no.href;
+      }
+    }
+  }
+
+  function consultarAndamento(){
+    parent.document.getElementById('ifrVisualizacao').src = 'controlador.php?acao=procedimento_consultar_historico&acao_origem=arvore_visualizar&acao_retorno=arvore_visualizar&id_procedimento=55596367&arvore=1&infra_sistema=100000100&infra_unidade_atual=21767&infra_hash=8f90d6ba31ae2013d215911e7cab8c770a60a4f58d828c82afd237d4c17d2396';
+    var no = objArvore.getNoSelecionado();
+    if(!parent.infraIsBreakpointBootstrap('lg') && (no instanceof infraArvoreNo || (no instanceof infraArvoreAcao && no.target == "ifrVisualizacao" && no.href != "javascript:void"))) {
+      parent.document.getElementById('ifrVisualizacao').onload = function() {
+        if(!parent.infraIsBreakpointBootstrap('lg')) {
+          parent.document.getElementById('divIframeVisualizacao').style.cssText = "display:block !important;";
+          parent.document.getElementById('divIframeArvore').style.cssText = "display:none !important;";
+        }
+      }
+    }
+  }
+
+  function consultarProcedimentoCiencias(){
+      }
+
+  function consultarDocumentoCiencias(){
+      }
+
+
+  function processarPasta(){
+
+    if (processarIframe){
+
+      var ie = infraVersaoIE();
+
+      try{
+        if (!ie){
+          docIframe = document.getElementById('ifrPasta').contentWindow.document;
+        }else{
+          docIframe = window.frames['ifrPasta'].document;
+        }
+      }catch(e){
+        alert('Não foi possível recuperar os protocolos.');
+        return;
+      }
+
+      ret = docIframe.body.innerHTML;
+
+      if (ret != ''){
+
+        if (ret.substring(0,2) != 'OK'){
+
+          var prefixoValidacao = 'INFRA_VALIDACAO';
+
+          if (ret.substr(0,15) == prefixoValidacao){
+
+            atualizarMensagemPasta('AVISO');
+
+            var msg = ret.substr(prefixoValidacao.length+1);
+            msg = msg.infraReplaceAll("\\n", "\n");
+            msg = decodeURIComponent(msg);
+            alert(msg);
+
+          }else{
+
+            try{
+
+              atualizarMensagemPasta('ERRO');
+
+              if (docIframe.getElementById('divInfraExcecao')==null){
+                alert('Erro recuperando protocolos.');
+              }else{
+
+                document.getElementById("ifrPasta").style.display = 'block';
+                document.getElementById('frmArvore').style.display = 'none';
+
+                resizeIframe();
+
+                docIframe.getElementById('btnInfraFecharExcecao').value = 'Voltar';
+                if (!ie){
+                  docIframe.getElementById('btnInfraFecharExcecao').innerHTML = 'Voltar';
+                }
+                docIframe.getElementById('btnInfraFecharExcecao').onclick = function() {
+                  document.getElementById("ifrPasta").style.display = 'none';
+                  document.getElementById('frmArvore').style.display = 'block';
+                }
+
+              }
+
+            }catch(e){alert(e);}
+          }
+        }else{
+
+          if (objArvore != null){
+
+            var Nos = [];
+            var NosAcoes = [];
+
+            var arrComandos = ret.substr(3).split("\n");
+            for(var i=0; i < arrComandos.length; i++){
+              if (arrComandos[i].substr(0,3)=='Nos'){
+                eval(arrComandos[i]);
+              }
+            }
+
+            if (Nos.length==0){
+              atualizarMensagemPasta('NAO ENCONTRADO');
+            }else{
+              processandoPasta = true;
+              try{
+                var noPasta = objArvore.getNo(document.getElementById('hdnPastaAtual').value);
+
+                var div = document.getElementById('div' + noPasta.id);
+                div.innerHTML = '';
+
+                objArvore.adicionarFilhos(noPasta, Nos, NosAcoes);
+
+                associarNosClipboard(Nos);
+
+                noPasta.carregado = true;
+
+                if (noPasta.navegar != null){
+                  var funcaoNavegar = 'navegarArvore(\'' + noPasta.navegar + '\')';
+                  noPasta.navegar = null;
+                  setTimeout(funcaoNavegar, 200);
+                }
+
+              }catch(e){
+                alert(e);
+              }
+              processandoPasta = false;
+            }
+          }
+
+          if (INFRA_IE){
+            window.status='Finalizado.';
+          }
+        }
+      }
+    }
+  }
+
+  function navegarArvore(sentido) {
+
+    if (objArvore!=null) {
+
+      var noSelecionado = objArvore.getNoSelecionado();
+
+      if (noSelecionado!=null) {
+        var no = null;
+        while(true){
+          if (sentido == 'P'){
+            no = objArvore.getNoProximo(noSelecionado.id);
+          }else if (sentido == 'A'){
+            no = objArvore.getNoAnterior(noSelecionado.id);
+          }
+          if (no!=null) {
+
+            if(no.tipo == 'PASTA' ){
+              if(no.carregado){
+                noSelecionado = no;
+              }else{
+                no.navegar = sentido;
+                abrirFecharPasta(no.id);
+                break;
+              }
+            }else if(no.tipo == 'AGUARDE' || !no.bolHabilitado){
+              noSelecionado = no;
+            }else{
+              objArvore.setNoSelecionado(no);
+              self.setTimeout('atualizarVisualizacao()',100);
+              break;
+            }
+          }else{
+            alert("Não existem mais protocolos disponíveis para exibição.");
+            break;
+          }
+        }
+      }
+      else{
+        alert("Não existem mais protocolos disponíveis para exibição.");
+      }
+    }
+  }
+
+  function navegarTeclado(ev){
+    var key = infraGetCodigoTecla(ev);
+    if(key == 40) {
+      navegarArvore('P');
+      return false;
+    } else if(key == 38) {
+      navegarArvore('A');
+      return false;
+    }
+    return true;
+  }
+
+  function associarNosClipboard(nos){
+      var icone = null;
+      for(var i=0;i<nos.length;i++){
+        var no = nos[i];
+        if (no.tipo != 'PASTA' && no.tipo != 'AGUARDE' && no.tipo.indexOf('FEDERACAO') == -1) {
+          icone = document.getElementById('anchorImg' + no.id);
+
+          var id = 'popover-content' + icone.id;
+          var divConteudoPopover = null;
+          if (no.tipo.indexOf('PROCESSO') != -1) {
+            divConteudoPopover = $('<div id="' + id + '" style="display: none;position:relative;">\n' +
+              '  <div class="list-group custom-popover" tipo="' + no.tipo + '">\n' +
+              '     <a popoverId="' + icone.id + '" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="' + no.aux + '" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="#" ><img class="align-self-center clipboard-icon-img" src="imagens/arvore_copiar_texto.svg" title="Copiar texto" />&nbsp;<span class="align-self-center">' + no.aux + '</span></a>\n' +
+              '    <a popoverId="' + icone.id + '" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="' + no.aux +' (' + no.title +')" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="#" ><img class="align-self-center clipboard-icon-img" src="imagens/arvore_copiar_texto.svg" title="Copiar texto" />&nbsp;<span class="align-self-center">'  + no.aux +' (' + no.title + ')</span></a>\n' +
+              '    <a popoverId="' + icone.id + '" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{'+ no.id +'|'  + no.aux +'}#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="#" ><img class="align-self-center clipboard-icon-img" src="imagens/arvore_copiar_editor.svg" title="Copiar link editor" />&nbsp;<span class="align-self-center">' + no.aux + '</span></a>\n' +
+              '    <a popoverId="' + icone.id + '" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{'+ no.id +'|'  + no.aux +'} (' + no.title +  ')#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="#" ><img class="align-self-center clipboard-icon-img" src="imagens/arvore_copiar_editor.svg" title="Copiar link editor" />&nbsp;<span class="align-self-center">' + no.aux +' (' + no.title +  ')</span></a>\n' +
+              '    <a popoverId="' + icone.id + '" tipo="url" onclick="copiarParaClipboard(this)" data-clipboard-text="http://sei.go.gov.br/sei/controlador.php?acao=procedimento_trabalhar&id_procedimento='+no.id+'" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="#" ><img class="align-self-center clipboard-icon-img" src="imagens/arvore_copiar_link_direto.svg" /><span class="align-self-center">&nbsp;Link para Acesso Direto</span></a>\n' +
+              '    <a popoverId="' + icone.id + '"  onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="#" ><span class="align-self-center">Fechar</span></a>\n' +
+              '  </div>\n' +
+              '</div>');
+          }else{
+
+            if (!no.bolHabilitado || no.tipo == 'DOCUMENTO_MOVIDO'){
+              divConteudoPopover = $('<div id="' + id + '" style="display: none;position:relative;">\n' +
+                  '  <div class="list-group custom-popover" tipo="' + no.tipo + '">\n' +
+                  '    <a popoverId="' + icone.id + '" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="' + no.aux + '" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="#" ><img class="align-self-center clipboard-icon-img" src="imagens/arvore_copiar_texto.svg" title="Copiar texto"/>&nbsp;<span class="align-self-center">' + no.aux + '</span></a>\n' +
+                  '    <a popoverId="' + icone.id + '" tipo="texto" onclick="copiarParaClipboard(this)"  data-clipboard-text="' + no.label +'" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="#" ><img class="align-self-center clipboard-icon-img" src="imagens/arvore_copiar_texto.svg" title="Copiar texto"/>&nbsp;<span class="align-self-center">'   + no.label + '</span></a>\n' +
+                  '    <a popoverId="' + icone.id + '"  onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="#" ><span class="align-self-center">Fechar</span></a>\n' +
+                  '  </div>\n' +
+                  '</div>');
+            }else{
+              divConteudoPopover = $('<div id="' + id + '" style="display: none;position:relative;">\n' +
+                  '  <div class="list-group custom-popover" tipo="' + no.tipo + '">\n' +
+                  '    <a popoverId="' + icone.id + '" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="' + no.aux + '" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="#"><img class="align-self-center clipboard-icon-img" src="imagens/arvore_copiar_texto.svg"  title="Copiar texto" />&nbsp;<span class="align-self-center">' + no.aux + '</span></a>\n' +
+                  '    <a popoverId="' + icone.id + '" tipo="texto" onclick="copiarParaClipboard(this)"  data-clipboard-text="' + no.label +'" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="#"><img class="align-self-center clipboard-icon-img" src="imagens/arvore_copiar_texto.svg"  title="Copiar texto" />&nbsp;<span class="align-self-center">'   + no.label + '</span></a>\n' +
+                  '    <a popoverId="' + icone.id + '" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{'+ no.id +'|'  + no.aux +'}#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="#"><img class="align-self-center clipboard-icon-img" src="imagens/arvore_copiar_editor.svg" title="Copiar link editor"/>&nbsp;<span class="align-self-center">' + no.aux + '</span></a>\n' +
+                  '    <a popoverId="' + icone.id + '" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#'+no.label.replace(no.aux,"{"+ no.id +"|"  + no.aux +"}")+'#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="#"><img class="align-self-center clipboard-icon-img" src="imagens/arvore_copiar_editor.svg" title="Copiar link editor"/>&nbsp;<span class="align-self-center">' + no.label +'</span></a>\n' +
+                  '    <a popoverId="' + icone.id + '" tipo="url" onclick="copiarParaClipboard(this)" data-clipboard-text="http://sei.go.gov.br/sei/controlador.php?acao=procedimento_trabalhar&id_procedimento=55596367&id_documento='+no.id+'" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="#" ><img class="align-self-center clipboard-icon-img" src="imagens/arvore_copiar_link_direto.svg" /><span class="align-self-center">&nbsp;Link para Acesso Direto</span></a>\n' +
+                  '    <a popoverId="' + icone.id + '"  onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="#" ><span class="align-self-center">Fechar</span></a>\n' +
+                  '  </div>\n' +
+                  '</div>');
+            }
+          }
+          $("body").append(divConteudoPopover);
+          $(icone).attr("data-toggle","popover");
+          $(icone).attr("data-placement","bottom");
+          $(icone).attr("href","#");
+
+          img = document.getElementById('icon' + no.id);
+          img.title = 'Menu cópia protocolo';
+
+
+          $(icone).click(function(e) {
+            e.preventDefault();
+          })   .popover({
+            html: true,
+            sanitize: false,
+            content: function() {
+              return $("#"+'popover-content'+ this.id) .html();
+            },
+
+          });
+
+          $(icone).on('show.bs.popover', function () {
+            $("a[data-toggle=popover]").not($(this)).popover("hide");
+
+          })
+          $(icone).on('shown.bs.popover', function () {
+            var idPopover = $("#"+this.id).attr("aria-describedby");
+            $( "#" +idPopover ).find(".clipboard-icon-focus").first().focus();
+          })
+        }
+      }
+  }
+
+  function atualizarMensagemPasta(tipo){
+
+    var pastaAtual = document.getElementById('hdnPastaAtual');
+
+    if (pastaAtual != null){
+
+      var idAguarde = pastaAtual.value.replace('PASTA','AGUARDE');
+
+      var spanAguarde = document.getElementById('span' + idAguarde);
+      var imgAguarde = document.getElementById('icon' + idAguarde);
+
+      if (spanAguarde != null && imgAguarde != null){
+        if (tipo == 'AVISO'){
+          spanAguarde.innerHTML = spanAguarde.title = 'Não foi possível carregar os protocolos.';
+          imgAguarde.src = '/infra_css/svg/remover.svg';
+        }else if (tipo == 'ERRO'){
+          spanAguarde.innerHTML = spanAguarde.title = 'Erro carregando protocolos.';
+          imgAguarde.src = '/infra_css/svg/remover.svg';
+        }else if (tipo == 'NAO ENCONTRADO'){
+          spanAguarde.innerHTML = spanAguarde.title = 'Nenhum protocolo encontrado.';
+          imgAguarde.src = '/infra_css/svg/remover.svg';
+        }else if (tipo == 'AGUARDE'){
+          spanAguarde.innerHTML = spanAguarde.title = 'Aguarde...';
+          imgAguarde.src = '/infra_css/svg/aguarde.svg';
+        }
+      }
+    }
+  }
+
+  function resizeIframe(){
+    document.getElementById("ifrPasta").style.height = (infraClientHeight()-30) + 'px';
+  }
+
+  function abrirFecharPasta(id){
+    objArvore.processarNoJuncao(id);
+
+  }
+
+  function visualizacaoRelacionados(n){
+    var div = document.getElementById('divRelacionadosParcial'+n);
+    if (div != null){
+      if (div.style.display=='block'){
+        div.style.display = 'none';
+      }else{
+        div.style.display = 'block';
+      }
+    }
+  }
+
+//</script>
+
+//--><!]]>
+</script>
+</head>
+
+<body onload="inicializar();" class="px-2 infraArvore">
+
+<div id="header">
+  <div id="topmenu" class="infraArvore"><a id="anchorImg55596367" data-toggle="popover" data-placement="bottom" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#" data-original-title="" title=""><img src="./processo.svg" id="icon55596367" title="Menu cópia protocolo"></a><a id="anchor55596367" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=270acf99df0f7b628563661f5c48958cfc8971b217ac0136e5482281631c13fa" class="infraArvoreNo" title="Minuta"><span id="span55596367" class="noVisitado">202320920001591</span></a><a id="anchorLD55596367" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;linha_direta=1&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=8a764f80b3f9264d5c5d864fcbd0dd764a1cd15cb852e629f669612233105a78" class="infraArvoreNoAcao"><img src="./linha_direta1.svg" id="iconLD55596367" title="Filtrar Linha Direta"></a><a id="anchorMC55596367" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=andamento_marcador_gerenciar&amp;acao_origem=arvore_visualizar&amp;acao_retorno=arvore_visualizar&amp;id_procedimento=55596367&amp;arvore=1&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=712e91bfd3dfe05c59aa81910a56a464d63f57dc790708f976f7d1f948ca20bf" class="infraArvoreNoAcao"><img src="./marcador_preto.svg" id="iconMC55596367" title="Marcador
+Urgente"></a><a id="anchorC" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=protocolo_ciencia_listar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;arvore=1&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=34625db523510d474e75ae4952ef9fde788fa4eb54722b0e73e8f661e99c0978" class="infraArvoreNoAcao"><img src="./ciencia.svg" id="iconC" title="Visualizar Ciências"></a><span><br></span></div>
+</div>
+<div id="container">
+  <div id="content">
+    <form id="frmArvore" method="post" target="ifrPasta">
+
+      <div id="divArvore" class="infraArvore">
+      <div id="div55596367" class="infraArvore"><img src="./join.gif"><a id="anchorImg55596369" data-toggle="popover" data-placement="bottom" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#" data-original-title="" title=""><img src="./documento_interno.svg" id="icon55596369" title="Menu cópia protocolo"></a><a id="anchor55596369" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=55596369&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=2877d0120a01887215c19728b81ec781278f40c99311ca8b9731fe4ee9c4d426" class="infraArvoreNo"><span id="span55596369">Despacho 330 (54502287)</span></a><a id="anchorUG55596369" href="javascript:alert(&#39;SEINFRA/STI-21767 - SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO&#39;);" class="infraArvoreInformacao" title="SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO"><span>SEINFRA/STI-21767</span></a><a id="anchorA55596369" href="javascript:alert(&#39;Assinado por:\nJUNYOR MANOEL DE ARAUJO RAMOS\nGerente\nSEINFRA/STI-21767\n\nTATIANA LISITA RIBERA\nSuperintendente\nSEINFRA/STI-21767&#39;);" class="infraArvoreNoAcao"><img src="./assinatura2.svg" id="iconA55596369" title="Assinado por:
+JUNYOR MANOEL DE ARAUJO RAMOS
+Gerente
+SEINFRA/STI-21767
+
+TATIANA LISITA RIBERA
+Superintendente
+SEINFRA/STI-21767"></a><span><br></span><img src="./join.gif"><a id="anchorImg55799108" data-toggle="popover" data-placement="bottom" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#" data-original-title="" title=""><img src="./documento_cancelado.svg" id="icon55799108" title="Menu cópia protocolo"></a><a id="anchor55799108" target="ifrVisualizacao" href="about:blank" class="infraArvoreNo" title="Documento Cancelado: Retificado 58201342"><span id="span55799108" style="color: rgb(204, 158, 128);">ANEXO Minuta da Política de Segurança da Informação - PSI (54686008)</span></a><a id="anchorUG55799108" href="javascript:alert(&#39;SEINFRA/STI-21767 - SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO&#39;);" class="infraArvoreInformacao" title="SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO"><span>SEINFRA/STI-21767</span></a><span><br></span><img src="./join.gif"><a id="anchorImg59700215" data-toggle="popover" data-placement="bottom" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#" data-original-title="" title=""><img src="./documento_word.svg" id="icon59700215" title="Menu cópia protocolo"></a><a id="anchor59700215" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=59700215&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=2538d345c12413130c9f24bfe230c142146d418991bbda37519ee6567c4422b5" class="infraArvoreNo"><span id="span59700215">ANEXO Minuta da Política de Segurança da Informação da Seinfra (58201342)</span></a><a id="anchorUG59700215" href="javascript:alert(&#39;SEINFRA/STI-21767 - SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO&#39;);" class="infraArvoreInformacao" title="SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO"><span>SEINFRA/STI-21767</span></a><span><br></span><img src="./join.gif"><a id="anchorImg59700422" data-toggle="popover" data-placement="bottom" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#" data-original-title="" title=""><img src="./documento_pdf.svg" id="icon59700422" title="Menu cópia protocolo"></a><a id="anchor59700422" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=59700422&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=e8923fb96f0c6e2bd493abfcad461cf4b77d76366801678947769635266fcfe1" class="infraArvoreNo"><span id="span59700422">ANEXO Minuta da Política de Segurança da Informação da Sinfra (58201561)</span></a><a id="anchorUG59700422" href="javascript:alert(&#39;SEINFRA/STI-21767 - SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO&#39;);" class="infraArvoreInformacao" title="SUPERINTENDÊNCIA DE TECNOLOGIA E INOVAÇÃO"><span>SEINFRA/STI-21767</span></a><span><br></span><img src="./join.gif"><a id="anchorImg59631772" data-toggle="popover" data-placement="bottom" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#" data-original-title="" title=""><img src="./documento_interno.svg" id="icon59631772" title="Menu cópia protocolo"></a><a id="anchor59631772" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=59631772&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=d4f98c32b09c8302e0feec129154dbae070d3df526745e4515bf7928d797d6b5" class="infraArvoreNo"><span id="span59631772">Despacho 51 (58139608)</span></a><a id="anchorUG59631772" href="javascript:alert(&#39;SEINFRA/SPHPI-21766 - SUBSECRETARIA DE POLÍTICAS HABITACIONAIS, PARCERIAS E INOVAÇÃO&#39;);" class="infraArvoreInformacao" title="SUBSECRETARIA DE POLÍTICAS HABITACIONAIS, PARCERIAS E INOVAÇÃO"><span>SEINFRA/SPHPI-21766</span></a><a id="anchorA59631772" href="javascript:alert(&#39;Assinado por:\nELIANE SIMONINI BALTAZAR\nSubsecretário (a)\nSEINFRA/SUBPPPI-21766&#39;);" class="infraArvoreNoAcao"><img src="./assinatura2.svg" id="iconA59631772" title="Assinado por:
+ELIANE SIMONINI BALTAZAR
+Subsecretário (a)
+SEINFRA/SUBPPPI-21766"></a><span><br></span><img src="./join.gif"><a id="anchorImg60276730" data-toggle="popover" data-placement="bottom" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#" data-original-title="" title=""><img src="./documento_interno.svg" id="icon60276730" title="Menu cópia protocolo"></a><a id="anchor60276730" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=60276730&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=3a52b6209d66eaa9c28f85f66072909f89020728fedbf3eed68db96f3d7972a3" class="infraArvoreNo"><span id="span60276730">Despacho 111 (58720595)</span></a><a id="anchorUG60276730" href="javascript:alert(&#39;SEINFRA/PROCSET-20943 - PROCURADORIA SETORIAL&#39;);" class="infraArvoreInformacao" title="PROCURADORIA SETORIAL"><span>SEINFRA/PROCSET-20943</span></a><a id="anchorA60276730" href="javascript:alert(&#39;Assinado por:\nJULIO GOMES\nProcurador (a) do Estado\nSEINFRA/PROCSET-20943&#39;);" class="infraArvoreNoAcao"><img src="./assinatura2.svg" id="iconA60276730" title="Assinado por:
+JULIO GOMES
+Procurador (a) do Estado
+SEINFRA/PROCSET-20943"></a><span><br></span><img src="./join.gif"><a id="anchorImg60391616" data-toggle="popover" data-placement="bottom" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#" data-original-title="" title=""><img src="./documento_interno.svg" id="icon60391616" title="Menu cópia protocolo"></a><a id="anchor60391616" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=60391616&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=808833d4bba5b4cf96bf0cc6f9acdcd05d287bcc35d81a68f0dff6185edbdb92" class="infraArvoreNo"><span id="span60391616">Despacho 65 (58824138)</span></a><a id="anchorUG60391616" href="javascript:alert(&#39;SEINFRA/SPHPI-21766 - SUBSECRETARIA DE POLÍTICAS HABITACIONAIS, PARCERIAS E INOVAÇÃO&#39;);" class="infraArvoreInformacao" title="SUBSECRETARIA DE POLÍTICAS HABITACIONAIS, PARCERIAS E INOVAÇÃO"><span>SEINFRA/SPHPI-21766</span></a><a id="anchorA60391616" href="javascript:alert(&#39;Assinado por:\nELIANE SIMONINI BALTAZAR\nSubsecretário (a)\nSEINFRA/SUBPPPI-21766&#39;);" class="infraArvoreNoAcao"><img src="./assinatura2.svg" id="iconA60391616" title="Assinado por:
+ELIANE SIMONINI BALTAZAR
+Subsecretário (a)
+SEINFRA/SUBPPPI-21766"></a><span><br></span><img src="./join.gif"><a id="anchorImg60571318" data-toggle="popover" data-placement="bottom" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#" data-original-title="" title=""><img src="./documento_interno.svg" id="icon60571318" title="Menu cópia protocolo"></a><a id="anchor60571318" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=60571318&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=16747f8d918aa47cdb32af69af524441f824937d29eba4c95811548012260fad" class="infraArvoreNo"><span id="span60571318" class="infraArvoreNoSelecionado">Portaria 090 Política de Segurança da Informação - SEINFRA (58986151)</span></a><a id="anchorUG60571318" href="javascript:alert(&#39;SEINFRA/GESG-20946 - GERÊNCIA DA SECRETARIA GERAL&#39;);" class="infraArvoreInformacao" title="GERÊNCIA DA SECRETARIA GERAL"><span>SEINFRA/GESG-20946</span></a><a id="anchorA60571318" href="javascript:alert(&#39;Assinado por:\nPEDRO HENRIQUE RAMOS SALES\nSecretário (a) de Estado\nSEINFRA/GAB-20941&#39;);" class="infraArvoreNoAcao"><img src="./assinatura2.svg" id="iconA60571318" title="Assinado por:
+PEDRO HENRIQUE RAMOS SALES
+Secretário (a) de Estado
+SEINFRA/GAB-20941"></a><span><br></span><img src="./join.gif"><a id="anchorImg60661462" data-toggle="popover" data-placement="bottom" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#" data-original-title="" title=""><img src="./documento_pdf.svg" id="icon60661462" title="Menu cópia protocolo"></a><a id="anchor60661462" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=60661462&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=aa9966a0233b31f35aaa1dea1c6a52022a8c8d55902675d93ce8506897805ab7" class="infraArvoreNo"><span id="span60661462" class="noVisitado">Publicação DOE - Portaria n. 090 de 12/04/2024. (59067546)</span></a><a id="anchorUG60661462" href="javascript:alert(&#39;SEINFRA/GESG-20946 - GERÊNCIA DA SECRETARIA GERAL&#39;);" class="infraArvoreInformacao" title="GERÊNCIA DA SECRETARIA GERAL"><span>SEINFRA/GESG-20946</span></a><span><br></span><img src="./joinbottom.gif"><a id="anchorImg60661740" data-toggle="popover" data-placement="bottom" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#" data-original-title="" title=""><img src="./documento_interno.svg" id="icon60661740" title="Menu cópia protocolo"></a><a id="anchor60661740" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=arvore_visualizar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=60661740&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=83478b38e71c83a2cf487009470b2211ef7b9cb4fd4bdd1c9d2a117a1e7cb4d3" class="infraArvoreNo"><span id="span60661740">Despacho 239 (59067873)</span></a><a id="anchorUG60661740" href="javascript:alert(&#39;SEINFRA/GESG-20946 - GERÊNCIA DA SECRETARIA GERAL&#39;);" class="infraArvoreInformacao" title="GERÊNCIA DA SECRETARIA GERAL"><span>SEINFRA/GESG-20946</span></a><a id="anchorA60661740" href="javascript:alert(&#39;Assinado por:\nVALERIA RODRIGUES\nGerente\nSEINFRA/GESG-20946&#39;);" class="infraArvoreNoAcao"><img src="./assinatura2.svg" id="iconA60661740" title="Assinado por:
+VALERIA RODRIGUES
+Gerente
+SEINFRA/GESG-20946"></a><a id="anchorCD60661740" target="ifrVisualizacao" href="https://sei.go.gov.br/sei/controlador.php?acao=protocolo_ciencia_listar&amp;acao_origem=procedimento_visualizar&amp;id_procedimento=55596367&amp;id_documento=60661740&amp;arvore=1&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=9d9683fe0565560d527e281317508d858148f388845717dc576be87d20196097" class="infraArvoreNoAcao"><img src="./ciencia.svg" id="iconCD60661740" title="Visualizar Ciências no Documento"></a><span><br></span></div></div>
+
+      <div id="divConsultarAndamento">
+        <a href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#" style="cursor:pointer;" onclick="consultarAndamento();"><img src="./processo_andamentos.svg" alt="Consultar Andamento" title="Consultar Andamento">&nbsp;Consultar Andamento</a>
+      </div>
+
+      <div id="divRelacionados">
+              </div>
+      
+      <input type="hidden" id="hdnArvore" name="hdnArvore" value="55596367¥55596369¥55799108¥59700215¥59700422¥59631772¥60276730¥60391616¥60571318¥60661462¥60661740">
+      <input type="hidden" id="hdnPastaAtual" name="hdnPastaAtual" value="">
+      <input type="hidden" id="hdnProtocolos" name="hdnProtocolos" value="">
+    </form>
+  </div>
+</div>
+
+<iframe id="ifrPasta" name="ifrPasta" onload="processarPasta();" width="100%" height="100%" frameborder="0" style="display:none;" src="./saved_resource.html"></iframe>
+
+
+<div id="popover-contentanchorImg55596367" style="display: none;position:relative;">
+  <div class="list-group custom-popover" tipo="PROCESSO">
+     <a popoverid="anchorImg55596367" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="202320920001591" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">202320920001591</span></a>
+    <a popoverid="anchorImg55596367" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="202320920001591 (Minuta)" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">202320920001591 (Minuta)</span></a>
+    <a popoverid="anchorImg55596367" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{55596367|202320920001591}#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">202320920001591</span></a>
+    <a popoverid="anchorImg55596367" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{55596367|202320920001591} (Minuta)#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">202320920001591 (Minuta)</span></a>
+    <a popoverid="anchorImg55596367" tipo="url" onclick="copiarParaClipboard(this)" data-clipboard-text="http://sei.go.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=55596367" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_link_direto.svg"><span class="align-self-center">&nbsp;Link para Acesso Direto</span></a>
+    <a popoverid="anchorImg55596367" onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><span class="align-self-center">Fechar</span></a>
+  </div>
+</div><div id="popover-contentanchorImg55596369" style="display: none;position:relative;">
+  <div class="list-group custom-popover" tipo="DOCUMENTO">
+    <a popoverid="anchorImg55596369" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="54502287" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">54502287</span></a>
+    <a popoverid="anchorImg55596369" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="Despacho 330 (54502287)" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">Despacho 330 (54502287)</span></a>
+    <a popoverid="anchorImg55596369" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{55596369|54502287}#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">54502287</span></a>
+    <a popoverid="anchorImg55596369" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#Despacho 330 ({55596369|54502287})#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">Despacho 330 (54502287)</span></a>
+    <a popoverid="anchorImg55596369" tipo="url" onclick="copiarParaClipboard(this)" data-clipboard-text="http://sei.go.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=55596367&amp;id_documento=55596369" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_link_direto.svg"><span class="align-self-center">&nbsp;Link para Acesso Direto</span></a>
+    <a popoverid="anchorImg55596369" onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><span class="align-self-center">Fechar</span></a>
+  </div>
+</div><div id="popover-contentanchorImg55799108" style="display: none;position:relative;">
+  <div class="list-group custom-popover" tipo="DOCUMENTO">
+    <a popoverid="anchorImg55799108" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="54686008" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">54686008</span></a>
+    <a popoverid="anchorImg55799108" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="ANEXO Minuta da Política de Segurança da Informação - PSI (54686008)" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">ANEXO Minuta da Política de Segurança da Informação - PSI (54686008)</span></a>
+    <a popoverid="anchorImg55799108" onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><span class="align-self-center">Fechar</span></a>
+  </div>
+</div><div id="popover-contentanchorImg59700215" style="display: none;position:relative;">
+  <div class="list-group custom-popover" tipo="DOCUMENTO">
+    <a popoverid="anchorImg59700215" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="58201342" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">58201342</span></a>
+    <a popoverid="anchorImg59700215" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="ANEXO Minuta da Política de Segurança da Informação da Seinfra (58201342)" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">ANEXO Minuta da Política de Segurança da Informação da Seinfra (58201342)</span></a>
+    <a popoverid="anchorImg59700215" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{59700215|58201342}#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">58201342</span></a>
+    <a popoverid="anchorImg59700215" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#ANEXO Minuta da Política de Segurança da Informação da Seinfra ({59700215|58201342})#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">ANEXO Minuta da Política de Segurança da Informação da Seinfra (58201342)</span></a>
+    <a popoverid="anchorImg59700215" tipo="url" onclick="copiarParaClipboard(this)" data-clipboard-text="http://sei.go.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=55596367&amp;id_documento=59700215" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_link_direto.svg"><span class="align-self-center">&nbsp;Link para Acesso Direto</span></a>
+    <a popoverid="anchorImg59700215" onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><span class="align-self-center">Fechar</span></a>
+  </div>
+</div><div id="popover-contentanchorImg59700422" style="display: none;position:relative;">
+  <div class="list-group custom-popover" tipo="DOCUMENTO">
+    <a popoverid="anchorImg59700422" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="58201561" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">58201561</span></a>
+    <a popoverid="anchorImg59700422" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="ANEXO Minuta da Política de Segurança da Informação da Sinfra (58201561)" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">ANEXO Minuta da Política de Segurança da Informação da Sinfra (58201561)</span></a>
+    <a popoverid="anchorImg59700422" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{59700422|58201561}#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">58201561</span></a>
+    <a popoverid="anchorImg59700422" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#ANEXO Minuta da Política de Segurança da Informação da Sinfra ({59700422|58201561})#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">ANEXO Minuta da Política de Segurança da Informação da Sinfra (58201561)</span></a>
+    <a popoverid="anchorImg59700422" tipo="url" onclick="copiarParaClipboard(this)" data-clipboard-text="http://sei.go.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=55596367&amp;id_documento=59700422" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_link_direto.svg"><span class="align-self-center">&nbsp;Link para Acesso Direto</span></a>
+    <a popoverid="anchorImg59700422" onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><span class="align-self-center">Fechar</span></a>
+  </div>
+</div><div id="popover-contentanchorImg59631772" style="display: none;position:relative;">
+  <div class="list-group custom-popover" tipo="DOCUMENTO">
+    <a popoverid="anchorImg59631772" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="58139608" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">58139608</span></a>
+    <a popoverid="anchorImg59631772" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="Despacho 51 (58139608)" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">Despacho 51 (58139608)</span></a>
+    <a popoverid="anchorImg59631772" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{59631772|58139608}#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">58139608</span></a>
+    <a popoverid="anchorImg59631772" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#Despacho 51 ({59631772|58139608})#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">Despacho 51 (58139608)</span></a>
+    <a popoverid="anchorImg59631772" tipo="url" onclick="copiarParaClipboard(this)" data-clipboard-text="http://sei.go.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=55596367&amp;id_documento=59631772" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_link_direto.svg"><span class="align-self-center">&nbsp;Link para Acesso Direto</span></a>
+    <a popoverid="anchorImg59631772" onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><span class="align-self-center">Fechar</span></a>
+  </div>
+</div><div id="popover-contentanchorImg60276730" style="display: none;position:relative;">
+  <div class="list-group custom-popover" tipo="DOCUMENTO">
+    <a popoverid="anchorImg60276730" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="58720595" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">58720595</span></a>
+    <a popoverid="anchorImg60276730" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="Despacho 111 (58720595)" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">Despacho 111 (58720595)</span></a>
+    <a popoverid="anchorImg60276730" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{60276730|58720595}#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">58720595</span></a>
+    <a popoverid="anchorImg60276730" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#Despacho 111 ({60276730|58720595})#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">Despacho 111 (58720595)</span></a>
+    <a popoverid="anchorImg60276730" tipo="url" onclick="copiarParaClipboard(this)" data-clipboard-text="http://sei.go.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=55596367&amp;id_documento=60276730" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_link_direto.svg"><span class="align-self-center">&nbsp;Link para Acesso Direto</span></a>
+    <a popoverid="anchorImg60276730" onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><span class="align-self-center">Fechar</span></a>
+  </div>
+</div><div id="popover-contentanchorImg60391616" style="display: none;position:relative;">
+  <div class="list-group custom-popover" tipo="DOCUMENTO">
+    <a popoverid="anchorImg60391616" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="58824138" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">58824138</span></a>
+    <a popoverid="anchorImg60391616" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="Despacho 65 (58824138)" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">Despacho 65 (58824138)</span></a>
+    <a popoverid="anchorImg60391616" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{60391616|58824138}#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">58824138</span></a>
+    <a popoverid="anchorImg60391616" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#Despacho 65 ({60391616|58824138})#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">Despacho 65 (58824138)</span></a>
+    <a popoverid="anchorImg60391616" tipo="url" onclick="copiarParaClipboard(this)" data-clipboard-text="http://sei.go.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=55596367&amp;id_documento=60391616" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_link_direto.svg"><span class="align-self-center">&nbsp;Link para Acesso Direto</span></a>
+    <a popoverid="anchorImg60391616" onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><span class="align-self-center">Fechar</span></a>
+  </div>
+</div><div id="popover-contentanchorImg60571318" style="display: none;position:relative;">
+  <div class="list-group custom-popover" tipo="DOCUMENTO">
+    <a popoverid="anchorImg60571318" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="58986151" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">58986151</span></a>
+    <a popoverid="anchorImg60571318" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="Portaria 090 Política de Segurança da Informação - SEINFRA (58986151)" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">Portaria 090 Política de Segurança da Informação - SEINFRA (58986151)</span></a>
+    <a popoverid="anchorImg60571318" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{60571318|58986151}#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">58986151</span></a>
+    <a popoverid="anchorImg60571318" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#Portaria 090 Política de Segurança da Informação - SEINFRA ({60571318|58986151})#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">Portaria 090 Política de Segurança da Informação - SEINFRA (58986151)</span></a>
+    <a popoverid="anchorImg60571318" tipo="url" onclick="copiarParaClipboard(this)" data-clipboard-text="http://sei.go.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=55596367&amp;id_documento=60571318" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_link_direto.svg"><span class="align-self-center">&nbsp;Link para Acesso Direto</span></a>
+    <a popoverid="anchorImg60571318" onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><span class="align-self-center">Fechar</span></a>
+  </div>
+</div><div id="popover-contentanchorImg60661462" style="display: none;position:relative;">
+  <div class="list-group custom-popover" tipo="DOCUMENTO">
+    <a popoverid="anchorImg60661462" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="59067546" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">59067546</span></a>
+    <a popoverid="anchorImg60661462" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="Publicação DOE - Portaria n. 090 de 12/04/2024. (59067546)" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">Publicação DOE - Portaria n. 090 de 12/04/2024. (59067546)</span></a>
+    <a popoverid="anchorImg60661462" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{60661462|59067546}#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">59067546</span></a>
+    <a popoverid="anchorImg60661462" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#Publicação DOE - Portaria n. 090 de 12/04/2024. ({60661462|59067546})#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">Publicação DOE - Portaria n. 090 de 12/04/2024. (59067546)</span></a>
+    <a popoverid="anchorImg60661462" tipo="url" onclick="copiarParaClipboard(this)" data-clipboard-text="http://sei.go.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=55596367&amp;id_documento=60661462" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_link_direto.svg"><span class="align-self-center">&nbsp;Link para Acesso Direto</span></a>
+    <a popoverid="anchorImg60661462" onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><span class="align-self-center">Fechar</span></a>
+  </div>
+</div><div id="popover-contentanchorImg60661740" style="display: none;position:relative;">
+  <div class="list-group custom-popover" tipo="DOCUMENTO">
+    <a popoverid="anchorImg60661740" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="59067873" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">59067873</span></a>
+    <a popoverid="anchorImg60661740" tipo="texto" onclick="copiarParaClipboard(this)" data-clipboard-text="Despacho 239 (59067873)" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_texto.svg" title="Copiar texto">&nbsp;<span class="align-self-center">Despacho 239 (59067873)</span></a>
+    <a popoverid="anchorImg60661740" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#{60661740|59067873}#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">59067873</span></a>
+    <a popoverid="anchorImg60661740" tipo="link" onclick="copiarParaClipboard(this)" data-clipboard-text="#Despacho 239 ({60661740|59067873})#" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_editor.svg" title="Copiar link editor">&nbsp;<span class="align-self-center">Despacho 239 (59067873)</span></a>
+    <a popoverid="anchorImg60661740" tipo="url" onclick="copiarParaClipboard(this)" data-clipboard-text="http://sei.go.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=55596367&amp;id_documento=60661740" class="list-group-item d-flex flex-row clipboard clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><img class="align-self-center clipboard-icon-img" src="./arvore_copiar_link_direto.svg"><span class="align-self-center">&nbsp;Link para Acesso Direto</span></a>
+    <a popoverid="anchorImg60661740" onclick="fecharClipboard(this)" class="list-group-item d-flex flex-row li-fechar clipboard-icon-focus" href="https://sei.go.gov.br/sei/controlador.php?acao=procedimento_visualizar&amp;acao_origem=procedimento_trabalhar&amp;acao_retorno=principal&amp;id_procedimento=55596367&amp;id_documento=&amp;infra_sistema=100000100&amp;infra_unidade_atual=21767&amp;infra_hash=c40854af4a743da7289b9ac61ff4ac233504c3c6def770c5cac7a2828eefcac9#"><span class="align-self-center">Fechar</span></a>
+  </div>
+</div></body></html>
