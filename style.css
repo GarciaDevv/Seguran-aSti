@@ -146,6 +146,88 @@ h1 {
   text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
 }
 
+.prevencao {
+  color: #333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+
+
+
+}
+ .warning{
+  color: #333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+ }
+ /*posicionamento aviso importante */
+
+
+
+
+ .warning {
+  display: flex; /* Usando flexbox para organizar os elementos lado a lado */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  gap: 20px; /* Espaçamento entre o texto e a imagem */
+  color: #333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.warning-text {
+  flex: 1; /* Permite que o texto ocupe o restante do espaço disponível */
+}
+
+.warning-image img {
+  width: 100%; /* Ajusta a largura da imagem */
+  max-width: 300px; /* Limita a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Bordas arredondadas na imagem */
+}
+
+
+/* posicionamento  prevenção */
+
+
+
+
+.prevencao {
+  display: flex; /* Usando flexbox para organizar os elementos lado a lado */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  gap: 20px; /* Espaçamento entre o texto e a imagem */
+  color: #333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.prevenc-txt {
+  flex: 1; /* Permite que o texto ocupe o restante do espaço disponível */
+}
+
+.imgpastinha img {
+  width: 100%; /* Ajusta a largura da imagem */
+  max-width: 300px; /* Limita a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Bordas arredondadas na imagem */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media Queries para Responsividade */
 @media (max-width: 1024px) {
   .container {
