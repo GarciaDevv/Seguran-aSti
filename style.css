@@ -336,3 +336,23 @@ h1 {
     margin-bottom: 15px; /* Espaçamento inferior em telas menores */
   }
 }
+
+
+
+
+/*destaque no aviso importante */
+
+.warning-text {
+  background-color:  #0fd658;;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
