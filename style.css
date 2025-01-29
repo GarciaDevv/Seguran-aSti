@@ -69,7 +69,7 @@ p {
   gap: auto; /* Espaço entre a imagem e o texto */
   border-radius: 5px; /* fundo borda entre o texto */
   padding: 1px;
-  width: 100%;
+  
   
 }
 
@@ -85,7 +85,7 @@ p {
 .avisoP {
   font-size: 19px; /* Tamanho da fonte */
   text-align: left; /* Alinha o texto à esquerda */
-  width: 100%; /* Ajusta a largura do texto */
+  width: 78%; /* Ajusta a largura do texto */
   line-height: 1.6; /* Espaçamento entre as linhas do texto */
   color: #333;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -105,6 +105,7 @@ h1 {
   color: #333;
   font-size: 14px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 90%;
 }
 
 
@@ -131,6 +132,7 @@ h1 {
   text-align: justify; /* Opcional, para alinhar o texto nas margens */
   font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 2.2; /* Espaçamento entre as linhas do texto */
+  
 }
 
 .imagem-direita {
@@ -154,6 +156,7 @@ h1 {
 .prevencao {
   color: #333;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 95%;
 
 
 
@@ -177,10 +180,12 @@ h1 {
   gap: 20px; /* Espaçamento entre o texto e a imagem */
   color: #333;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 95%;
 }
 
 .warning-text {
   flex: 1; /* Permite que o texto ocupe o restante do espaço disponível */
+ 
   
 }
 
@@ -406,6 +411,24 @@ color: #333333;
 
 
 
+ .footer {
+  background-color: #a4d064;
+ color: #333333;
+   padding: 20px;
+   border-radius: 8px;
+ 
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+   animation: fadeIn 1s ease-in-out;
+ }
+
+
+
+
+
+
+
+
+
  /*contato suporte importante */
 /*updte*/
 .container1 {
@@ -485,6 +508,40 @@ color: #333333;
 }
 
 /* aplicando a animação flutuando */
+.alert1 img{
+
+  animation:flutuar 5s ease-in-out infinite;
+
+}
+
+/* aplicando a animação flutuando */
+.imagem-direita{
+
+  animation:flutuar 5s ease-in-out infinite;
+
+}
+
+
+/* aplicando a animação flutuando */
+.warning-image{
+
+  animation:flutuar 5s ease-in-out infinite;
+
+}
+
+
+
+/* aplicando a animação flutuando */
+.imgpastinha{
+
+  animation:flutuar 5s ease-in-out infinite;
+
+}
+
+
+
+
+/* aplicando a animação flutuando */
 .warning-text{
 
   animation:flutuar 5s ease-in-out infinite;
@@ -511,6 +568,16 @@ color: #333333;
   animation:flutuar 5s ease-in-out infinite;
 
 }
+
+
+
+/* aplicando a animação flutuando */
+.container1{
+
+  animation:flutuar 5s ease-in-out infinite;
+
+}
+
 
 
 
@@ -543,6 +610,49 @@ color: #333333;
 
 
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+
+ 
+
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+  /* Adiciona uma sombra ao redor do bloco.
+      */
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+  /* tempo e  efeito da transiçao da sombra */
+}
+
+
+.container1:hover { 
+  /* quando o usuario passar o mouse em cima do bloco.. */
+
+ 
+
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+  /* Adiciona uma sombra ao redor do bloco.
+      */
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+  /* tempo e  efeito da transiçao da sombra */
+}
+
+
+
+.txtinfo:hover { 
+  /* quando o usuario passar o mouse em cima do bloco.. */
+
+ 
+
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+  /* Adiciona uma sombra ao redor do bloco.
+      */
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+  /* tempo e  efeito da transiçao da sombra */
+}
+
+
+.prevenc-txt:hover { 
+  /* quando o usuario passar o mouse em cima do bloco.. */
 
  
 
