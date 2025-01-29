@@ -282,6 +282,7 @@ h1 {
 
   .txtinfo {
     font-size: 16px;
+    width: 70%;
   }
 
   .footer {
@@ -295,6 +296,38 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .container1{
+    width: 80%;
+
+  }
+  
+  
+  
+  
+  .prevencao{
+    width: 90%;
+    height: auto;
+
+  }
+  .imgpastinha{
+    width: 20%;
+
+
+  }
+   .warning{
+    width: 95%;
+
+   }
+
+   .warning-image{
+    width: 25%;
+
+
+   }
+  
+  
+  
+  
   .container {
     width: 100%;
     padding: 10px;
